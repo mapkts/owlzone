@@ -1,0 +1,20 @@
+# Dependencies
+markdown:       kramdown
+highlighter:    rouge
+
+kramdown:
+  auto_ids:     true
+
+# Permalinks
+permalink:      pretty
+
+# Server
+source:         "."
+destination:    ./_gh_pages
+baseurl:        ""
+url:            "https://lornus.me"
+exclude:
+  - .git/
+  - .github/
+  - Gemfile
+  - README.md
