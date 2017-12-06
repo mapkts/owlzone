@@ -16,8 +16,11 @@
 			</nav>
 
 			<div id="search-bar" class="search-box">
-				<form class="search" action="#" method="post">
-					<input type="text" id="search_query" name="search_query" placeholder="Search">
+				<form class="search" action="https://google.com/search" method="get">
+					<fieldset>
+					<input type="hidden" name="q" value="site:lornus.me">
+					<input type="text" name="q" results="0" placeholder="Search">
+					</fieldset>
 				</form>
 			</div>
 
