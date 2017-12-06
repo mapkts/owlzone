@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+{% include head.html %}
+</head>
+<body>
+<div id="wrapper">
+{% include header.html %}
+
+<main id="main-container">
+
+	<section class="post-content">
+		<article>
+			<a  class="post-title" href="{{ page.url }}"><h1>{{ page.title }}</h1></a>
+			<div class="post-meta">
+				<time>{{ site.time | date_to_string }}</time>
+			</div>
+
+			{{ content }}
+
+		</article>
+	</section>	<!-- End of post-content -->
+	
+</main>	<!-- End of Main -->
+	{% include footer.html %}
+</div>
+	{% include scripts.html %}
+</body>
+</html>
