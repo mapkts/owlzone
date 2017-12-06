@@ -17,3 +17,7 @@ exclude:
   - .github/
   - Gemfile
   - README.md
+
+# Social
+title:              OwlZone
+description:        "The reign of a night owl."
