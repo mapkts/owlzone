@@ -35,6 +35,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
 /* General CSS styles */
 * {
 	box-sizing: border-box;
@@ -55,7 +56,6 @@ body {
 }
 
 ::selection {
-	/*text-shadow: none;*/
 	background-color: #add8e6;
 }
 
@@ -100,18 +100,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-	font-size: 2.4rem;
+	font-size: 3.2rem;
+}
+
+@media (max-width: 500px) {
+	h1 {
+		font-size: 3rem;
+	}
 }
 
 h2 {
 	font-size: 2.4rem;
-	color: #0d923f;
-}
-
-@media (max-width: 500px) {
-	h1, h2 {
-		font-size: 2.2rem;
-	}
 }
 
 h3 {
@@ -119,29 +118,15 @@ h3 {
 }
 
 h4 {
-	font-size: 2.2rem;
-	color: #0d923f;
-}
-
-@media (max-width: 500px) {
-	h3, h4 {
-		font-size: 2.0rem;
-	}
+	font-size: 2.0rem;
 }
 
 h5 {
-	font-size: 2.0rem;
+	font-size: 1.8rem;
 }
 
 h6 {
-	font-size: 2.0rem;
-	color: #0d923f;
-}
-
-@media (max-width: 500px) {
-	h5, h6 {
-		font-size: 1.8rem;
-	}
+	font-size: 1.6rem;
 }
 
 ul {
