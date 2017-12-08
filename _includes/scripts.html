@@ -1,35 +1,36 @@
+
 <script type="text/javascript">
-		function expand(s) {
-			s.style.display = "none";
-			var x = document.getElementById('nav-menu');
-			x.style.display = "block";
-			var y = document.getElementById('collapse-menu');
-			y.style.display = "block";
-		}
-		function collapse(s) {
-			s.style.display = "none";
-			var x = document.getElementById("nav-menu");
-			x.style.display = "none";
-			var y = document.getElementById('toggle-menu');
-			y.style.display = "block";
-		}
-		function showSearchBox(s) {
-			s.style.display = "none";
-			var x = document.getElementById('search-bar');
-			x.style.display = "block";
-			var y = document.getElementById('collapse-search');
-			y.style.display = "block";
-			var d = document.getElementById("oz-logo");
-			d.className += " hide-logo";
-		}
-		function hideSearchBox(s) {
-			s.style.display = "none";
-			var x = document.getElementById('search-bar');
-			x.style.display = "none";
-			var y = document.getElementById('toggle-search');
-			y.style.display = "block";
-			var d = document.getElementById('oz-logo');
-			d.className += " show-logo";
-			d.className -= " hide-logo";
-		}
-	</script>
+	function expand(s) {
+		s.style.display = "none";
+		var x = document.getElementById('nav-menu');
+		x.style.display = "block";
+		var y = document.getElementById('collapse-menu');
+		y.style.display = "block";
+	}
+	function collapse(s) {
+		s.style.display = "none";
+		var x = document.getElementById("nav-menu");
+		x.style.display = "none";
+		var y = document.getElementById('toggle-menu');
+		y.style.display = "block";
+	}
+	function showSearchBox(s) {
+		s.style.display = "none";
+		var x = document.getElementById('search-bar');
+		x.style.display = "block";
+		var y = document.getElementById('collapse-search');
+		y.style.display = "block";
+		var d = document.getElementById("oz-logo");
+		d.className += " hide-logo";
+	}
+	function hideSearchBox(s) {
+		s.style.display = "none";
+		var x = document.getElementById('search-bar');
+		x.style.display = "none";
+		var y = document.getElementById('toggle-search');
+		y.style.display = "block";
+		var d = document.getElementById('oz-logo');
+		d.className += " show-logo";
+		d.className -= " hide-logo";
+	}
+</script>
