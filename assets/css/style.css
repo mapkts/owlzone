@@ -414,7 +414,7 @@ code {
 }
 
 .recent-post .post-title {
-	font-family: "Lato", "Microsoft Yahei", Arial, sans-serif;
+	font-family: Trebuchet MS, "Microsoft Yahei", Arial, sans-serif;
 	line-height: 1.2;
 	padding: 0;
 	margin: 0;
@@ -716,4 +716,68 @@ code {
 	.card-area .card-content {
 		padding-bottom: 75%;
 	}
+}
+
+/* post content css */
+.post-content {
+	width: 100%;
+	padding: 5%;
+	text-align: left;
+	line-height: 1.7;
+	color: #222;
+}
+
+.post-content .post-title {
+	font-family: Trebuchet MS, "Microsoft Yahei", Arial, sans-serif;
+	text-align: center;
+	font-size: 3rem;
+	line-height: 1.2;
+	padding: 0;
+	margin: 0;
+	color: #222;
+}
+
+.post-content .post-meta {
+	text-align: center;
+	color: #aaa;
+	padding: 1rem 0;
+	font-weight: bold;
+}
+
+.post-content .post-title span {
+	position: relative;
+}
+
+.post-content .post-title span:hover {
+	color: #0181eb;
+}
+
+.post-content .post-title span:before {
+	content: "\2993";
+	position: absolute;
+	left: -26px;
+	top: 0;
+	transition: all .5s ease-in-out 0s;
+	transform: scaleX(0);
+	visibility: hidden;
+}
+
+.post-content .post-title span:after {
+	content: "\2994";
+	position: absolute;
+	top: 0;
+	right: -26px;
+	transition: all .5s ease-in-out 0s;
+	transform: scaleX(0);
+	visibility: hidden;
+}
+
+.post-content .post-title span:hover:before, .post-content .post-title span:hover:after {
+	visibility: visible;
+	transform: scaleX(1);
+}
+
+.post-content p {
+	line-height: 2.4rem;
+	margin-bottom: 1.5rem;
 }
