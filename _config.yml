@@ -11,7 +11,8 @@ permalink:      pretty
 # Server
 source:         "."
 baseurl:        ""
-url:            "http://lornus.me"
+url:            "https://lornus.me"
+encoding:       UTF-8
 exclude:
   - .git/
   - .github/
