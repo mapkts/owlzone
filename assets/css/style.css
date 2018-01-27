@@ -14,9 +14,8 @@
 
 .img-gallery {
 	position: relative;
-	left: 10%;
 	width: 80%;
-	margin: 14px 0;
+	margin: 14px auto;
 }
 .img-gallery ul {
 	overflow: hidden;
