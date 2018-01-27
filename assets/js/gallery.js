@@ -1,4 +1,4 @@
-[
+var galleryData = [
 	"arrival_of_the_normandy_train_gare_saint_lazare.png",
 	"saint_lazare_in_paris_saint_lazare_in_paris.png",
 	"gare_saint-lazare_gare_saint_lazare.png",
@@ -12,4 +12,3 @@
 	"the_fighting_temeraire_the_fighting_temeraire.png",
 	"peace_burial_at_sea_of_the_body_of_sir_david_wilkie.png"
 ]
-

@@ -37,14 +37,14 @@
 		preString = "<li><a href='#'><img class='gallery-img' src='assets/img/gallery/",
 		postString = "'></a></li>";
 
-	var xhr = new XMLHttpRequest();
-	xhr.open('GET', 'gallery.json', true);
-	xhr.send(null);
-	xhr.onreadystatechange = function() {
-		if (xhr.readystate == 4 && xhr.status === 200) {
-			attachHtml();
-		}
-	};
+	// var xhr = new XMLHttpRequest();
+	// xhr.open('GET', 'gallery.json', true);
+	// xhr.send(null);
+	// xhr.onreadystatechange = function() {
+	// 	if (xhr.readystate == 4 && xhr.status === 200) {
+	// 		attachHtml();
+	// 	}
+	// };
 
 	function attachHtml() {
 		// if innerHTML exists, remove it for redrawing.
@@ -52,18 +52,19 @@
 
 		// push at least 4 images.
 		for(var i = 0; i < 4; i++) {
-			el.innerHTML += preString + xhr.responseText[i] + postString;
+			el.innerHTML += preString + galleryData[i] + postString;
 		}
 
 		// push additional images according to innerWidth.
 		var width = 385;
 		for(var j = 4; j < 12; j++) {
 			if (window.innerWidth > width) {
-				el.innerHTML += preString + xhr.responseText[j] + postString;
+				el.innerHTML += preString + galleryData[j] + postString;
 				width += 75;
 			}
 		}
 	}
+	attachHtml();
 
 	// if window has resized, invoke attachHtml.
 	window.addEventListener("resize", attachHtml);

@@ -401,8 +401,9 @@
 
 @media (max-width: 768px) {
 	.search-field {
-		position: absolute;
-		right: 70px;
+    position: absolute;
+    right: 70px;
+    display: none;
 	}
 	.search-scope,
 	.search-visible { display: block; }
@@ -417,7 +418,7 @@
 #footer {
 	position: relative;
 	overflow: hidden;
-	height: 4rem;
+	height: 48px;
 	font-size: 1.3rem;
 	color: #444;
 	background-color: #aaa;
