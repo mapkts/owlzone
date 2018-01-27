@@ -92,8 +92,8 @@
    h1 { font-size: 3rem; }
  }
 
- ul { padding-left: 20px; }
- ol { padding-left: 20px; }
+ #main-container ul { padding-left: 20px; }
+ #main-container ol { padding-left: 20px; }
 
  img:not(.gallery-img) { max-width: 100%; }
 
@@ -267,12 +267,36 @@
 
 
 /*
+ * Logo
+ */
+
+.logo {
+	position: absolute;
+	display: block;
+	width: 140px;
+	height: 50px;
+	padding: 10px 14px;
+}
+.logo svg {
+	fill: #444444;
+	stroke: #444444;
+	stroke-width: 0.15mm;
+}
+.logo svg:hover {
+	fill: #81b2df;
+	stroke: #81b2df;
+}
+@media (max-width: 410px) {
+	.logo-responsive { display: none; }
+}
+
+
+/*
  * Nav
  */
 
-.nav-main {
+ .nav-main {
 	display: inline-block;
-	padding: 0;
 }
 .nav-main-item {
 	position: relative;
@@ -323,34 +347,10 @@
 		margin: 5px auto;
 		padding: 5px 5px 5px;
 		font-size: 1.5rem;
-	}
+  }
+  .nav-main-item:hover a { border-bottom: none; }
 	.nav-icon,
 	.nav-dropdown { display: block; }
-}
-
-
-/*
- * Logo
- */
-
-.logo {
-	position: absolute;
-	display: block;
-	width: 140px;
-	height: 50px;
-	padding: 10px 14px;
-}
-.logo svg {
-	fill: #444444;
-	stroke: #444444;
-	stroke-width: 0.15mm;
-}
-.logo svg:hover {
-	fill: #81b2df;
-	stroke: #81b2df;
-}
-@media (max-width: 410px) {
-	.logo-responsive { display: none; }
 }
 
 
@@ -364,7 +364,6 @@
 	right: 14px;
 }
 .search-field input {
-	float: right;
 	width: 150px;
 	height: 24px;
 	padding: 2px 6px;
@@ -417,39 +416,30 @@
 
 #footer {
 	position: relative;
-	overflow: hidden;
 	height: 48px;
 	font-size: 1.3rem;
 	color: #444;
 	background-color: #aaa;
 }
 #footer a { color: #444; }
-#footer div:nth-child(1) {
+#footer div:first-child {
 	position: absolute;
-	float: left;
 	left: 10px;
 	top: 20px;
 }
-#footer div:nth-child(2) {
-	position: relative;
-	top: 8px;
-	margin: 0 auto;
-	padding: 0;
-	text-align: center;
-}
-#footer div:nth-child(3) {
+#footer div:last-child {
 	position: absolute;
-	float: right;
 	right: 10px;
-	top: 10px;
+	top: 20px;
 }
-#footer div a {
-	position: relative;
-	top: 10px;
-	display: inline-block;
+#footer .media-link {
+  display: inline-block;
+  height: 48px;
 	padding: 0px 5px 0px;
 }
-#footer a svg {
+#footer .media-link svg {
+  position: relative;
+  top: 20px;
 	width: 16px;
 	height: 16px;
 }
