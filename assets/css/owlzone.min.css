@@ -92,8 +92,8 @@
    h1 { font-size: 3rem; }
  }
 
- #main-container ul { padding-left: 20px; }
- #main-container ol { padding-left: 20px; }
+ #content ul { padding-left: 20px; }
+ #content ol { padding-left: 20px; }
 
  img:not(.gallery-img) { max-width: 100%; }
 
