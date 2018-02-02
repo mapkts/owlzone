@@ -243,14 +243,11 @@
  */
 
 #wrapper {
-	margin: 0 auto;
-	width: 980px;
+	margin: auto;
+	max-width: 980px;
 	background-color: #fff;
 }
 
-@media (max-width: 980px) {
-	#wrapper { width: 100%; }
-}
 
 
 /*
