@@ -69,3 +69,12 @@
 	// if window has resized, invoke attachHtml.
 	window.addEventListener("resize", attachHtml);
 })();
+
+(function codeBanner() {
+	var el = document.getElementsByClassName('highlight');
+	var langList = [];
+	for(var i = 0; i < el.length; i++) {
+		langList.push(el[i].firstChild.firstChild.dataset.lang);
+		el[i].setAttribute('data-lang', langList[i]);
+	}
+})();
