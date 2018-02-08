@@ -52,7 +52,7 @@
 
 		// push at least 4 images.
 		for(var i = 0; i < 4; i++) {
-			el.innerHTML += preString + galleryData[i] + postString;
+			el.innerHTML += preString + galleryData[i] + postString;()
 		}
 
 		// push additional images according to innerWidth.
@@ -68,4 +68,13 @@
 
 	// if window has resized, invoke attachHtml.
 	window.addEventListener("resize", attachHtml);
+})();
+
+(function codeBanner() {
+	var el = document.getElementsByClassName('highlight');
+	var langList = [];
+	for(var i = 0; i < el.length; i++) {
+		langList.push(el[i].firstChild.firstChild.dataset.lang);
+		el[i].setAttribute('data-lang', langList[i]);
+	}
 })();

@@ -12,7 +12,7 @@
  fieldset, form, label, legend,
  table, caption, tbody, tfoot, thead, tr, th, td,
  article, aside, canvas, details, embed,
- figure, figcaption, footer, header, hgroup,
+ figure, figcaption, main-footer, header, hgroup,
  menu, nav, output, ruby, section, summary,
  time, mark, audio, video {
    margin: 0;
@@ -108,52 +108,42 @@
  }
  blockquote p { display: inline; }
 
- /* pre {
+ .highlight {
    position: relative;
-   font-family: Consolas, Menlo, Monaco, Lucida Console, Courier New, monospace, serif;
-   overflow: auto;
-   white-space: pre-wrap;
-   word-wrap: break-word;
-   -moz-tab-size: 2;
-   -o-tab-size: 2;
-   tab-size: 2;
    min-width: 100%;
-   max-height: 450px;
-   line-height: 1.5;
-   font-size: 14px;
-   background: #eee;
-   padding: 0;
+	 max-height: 450px;
    padding-left: 10px;
    padding-top: 20px;
    border-radius: 4px;
+   background: #eee;
  }
 
- pre[rel]::before {
+ .highlight > pre {
+	overflow: auto;
+	font-family: Consolas, Menlo, Monaco, "Lucida Console", "Courier New", monospace, serif;
+  font-size: 14px;
+	line-height: 1.5;
+	white-space: pre-wrap;
+  /* word-wrap: break-word; */
+  -moz-tab-size: 2;
+  -o-tab-size: 2;
+  tab-size: 2;
+ }
+
+ .highlight[data-lang]:before {
    font-size: 1.4rem;
-   content: attr(rel);
+   content: attr(data-lang);
    color: white;
    position: absolute;
    top: 0px;
    left: 0;
    width: 100%;
-   background: #4caf50;
+   background:  #1863a1;
    padding: 0;
    text-indent: 10px;
  }
 
- pre[rel="HTML"]:before, pre[rel="html"]:before {
-   background: #4caf50;
- }
-
- pre[rel="CSS"]:before, pre[rel="css"]:before {
-   background: #ff9800;
- }
-
- pre[rel="JavaScript"]:before {
-   background: #1863a1;
- }
-
- code {
+ code:not() {
    background: #ccc;
    padding: 0 5px 2px;
    border-radius: 2px;
@@ -163,7 +153,7 @@
    font-size: 90%;
    overflow-wrap: break-word;
    word-wrap: break-word;
- } */
+ }
 
  .clearfix:before,
  .clearfix:after {
@@ -400,7 +390,7 @@
  * Footer
  */
 
-#footer {
+#main-footer {
 	position: relative;
   height: 48px;
   text-align: center;
@@ -408,28 +398,28 @@
 	color: #444;
 	background-color: #aaa;
 }
-#footer a { color: #444; }
-#footer div:first-child {
+#main-footer a { color: #444; }
+#main-footer div:first-child {
 	position: absolute;
 	left: 10px;
 	top: 20px;
 }
-#footer div:last-child {
+#main-footer div:last-child {
 	position: absolute;
 	right: 10px;
 	top: 20px;
 }
-#footer .media-link {
+#main-footer .media-link {
   display: inline-block;
   height: 48px;
 	padding: 0px 5px 0px;
 }
-#footer .media-link svg {
+#main-footer .media-link svg {
   position: relative;
   top: 18px;
 	width: 16px;
 	height: 16px;
 }
-#footer .github-svg:hover { fill: #FFFFFF; }
-#footer .twitter-svg:hover { fill: #1DA1F2; }
-#footer .email-svg:hover { fill: #DC4E41; }
+#main-footer .github-svg:hover { fill: #FFFFFF; }
+#main-footer .twitter-svg:hover { fill: #1DA1F2; }
+#main-footer .email-svg:hover { fill: #DC4E41; }
