@@ -57,7 +57,7 @@
 }
 
 .recent-post .post-title {
-	font-family: Trebuchet MS, "Microsoft Yahei", Arial, sans-serif;
+	font-family: ""Trebuchet MS"", "Microsoft Yahei", Arial, sans-serif;
 	line-height: 1.2;
 	padding: 0;
 	margin: 0;
@@ -242,7 +242,7 @@
 }
 
 .post-content .post-title {
-	font-family: Trebuchet MS, "Microsoft Yahei", Arial, sans-serif;
+	font-family: "Trebuchet MS", "Microsoft Yahei", Arial, sans-serif;
 	text-align: center;
 	font-size: 3rem;
 	line-height: 1.2;
