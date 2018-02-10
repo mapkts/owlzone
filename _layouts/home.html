@@ -6,34 +6,31 @@
 <body>
 
 
-		{% include header.html %}
+{% include header.html %}
 
 
-		<main id="main-container">
+<main id="main-container" role="main">
 
-			{% include gallery.html %}
+{% include gallery.html %}
 
-			<section id="content" class="recent-post">
-				<article>
-					<a  class="post-title" href="{{ page.url }}"><h1>{{ page.title }}</h1></a>
-					<div class="post-meta">
-						<time>{{ site.time | date_to_string }}</time>
-					</div>
+	<section id="content" class="recent-post">
+		<article>
+			<a  class="post-title" href="{{ page.url }}"><h1>{{ page.title }}</h1></a>
+			<div class="post-meta">
+				<time>{{ site.time | date_to_string }}</time>
+			</div>
 
-					{{ content }}
+			{{ content }}
 
-				</article>
-			</section>
+		</article>
+	</section>
 
+	{% include aside.html %}
 
-			{% include aside.html %}
-
-		</main>
-
-
-		{% include footer.html %}
+</main>
 
 
+{% include footer.html %}
 
 
 {% include scripts.html %}
