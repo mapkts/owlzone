@@ -74,10 +74,6 @@ hr {
 /*
  * helpers
  */
-.no-scroll {
-	overflow: hidden;
-}
-
 
 
 
@@ -314,24 +310,25 @@ hr {
  */
 
 .site-footer {
-	position: relative;
   height: 48px;
   text-align: center;
 	font-size: 13px;
 	color: #444;
 	background-color: #aaa;
 }
-.site-footer a { color: #444; }
-.copyright,
-.terms {
-	display: flex;
-	align-items: center;
-	height: 48px;
+.site-footer > div {
+	position: relative;
 }
-.copyright { float: left; }
-.terms { float: right; }
-.media {
-	display: inline-block;
+.site-footer a { color: #444; }
+.copyright {
+	position: absolute;
+	top: 16px;
+	left: 16px;
+}
+.terms {
+	position: absolute;
+	top: 16px;
+	right: 16px;
 }
 .site-footer .media-link {
   display: inline-block;

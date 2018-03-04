@@ -39,15 +39,13 @@
 	var $scope = $('#trigger-search'),
 		$close = $('#collapse-search'),
 		$bar = $('#search-field'),
-		$logo = $('.logo'),
-		$body = $('body');
+		$logo = $('.logo');
 
 	$scope.bind('click', function() {
 		$scope.addClass('search-hidden');
 		$close.addClass('search-visible');
 		$bar.addClass('search-visible');
 		$logo.addClass('logo-responsive');
-		$body.addClass('no-scroll');
 	});
 
 	$close.bind('click', function() {
@@ -55,7 +53,6 @@
 		$close.removeClass('search-visible');
 		$bar.removeClass('search-visible');
 		$logo.removeClass('logo-responsive');
-		$body.removeClass('no-scroll');
 	});
 })();
 
