@@ -97,7 +97,7 @@ hr {
   top: 0;
 }
 .has-custom-image {
-  background-image: url("../img/owl-and-rat.jpg");
+  background-image: url("assets/img/owl-and-rat.jpg");
   background-position: center;
   background-size: cover;
   -webkit-background-size: cover;
