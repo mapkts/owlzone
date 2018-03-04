@@ -105,6 +105,7 @@ hr {
   top: 0;
 }
 .has-custom-image {
+	background-image: url("http://owlzone.org/assets/img/owl-and-rat.jpg");
   background-position: center;
   background-size: cover;
   -webkit-background-size: cover;
