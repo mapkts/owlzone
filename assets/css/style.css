@@ -305,7 +305,7 @@ hr {
  * Footer
  */
 
-#main-footer {
+.site-footer {
 	position: relative;
   height: 48px;
   text-align: center;
@@ -313,29 +313,33 @@ hr {
 	color: #444;
 	background-color: #aaa;
 }
-#main-footer a { color: #444; }
-#main-footer .copyright {
-	position: absolute;
-	top: 20px;
+.site-footer a { color: #444; }
+.copyright,
+.terms {
+	display: flex;
+	align-items: center;
+	float: left;
+	height: 48px;
 }
-#main-footer .terms {
-	position: absolute;
-	top: 20px;
+.copyright { float: left; }
+.terms { float: right; }
+.media {
+	display: inline-block;
 }
-#main-footer .media-link {
+.site-footer .media-link {
   display: inline-block;
   height: 48px;
 	padding: 0px 5px 0px;
 }
-#main-footer .media-link svg {
+.site-footer .media-link svg {
   position: relative;
   top: 18px;
 	width: 16px;
 	height: 16px;
 }
-#main-footer .github-svg:hover { fill: #FFFFFF; }
-#main-footer .twitter-svg:hover { fill: #1DA1F2; }
-#main-footer .email-svg:hover { fill: #DC4E41; }
+.site-footer .github-svg:hover { fill: #FFFFFF; }
+.site-footer .twitter-svg:hover { fill: #1DA1F2; }
+.site-footer .email-svg:hover { fill: #DC4E41; }
 
 
 
