@@ -1,3 +1,5 @@
-_site/
-.sass-cache/
-.jekyll-metadata
+# Ignore docs files
+_site
+
+# Ignore editor folder
+.vscode

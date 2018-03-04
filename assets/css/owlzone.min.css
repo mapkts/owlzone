@@ -12,7 +12,7 @@ dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
-figure, figcaption, main-footer, header, hgroup,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -210,162 +210,6 @@ code:not([data-lang]) {
 .highlight .il { color: #009999 } /* Literal.Number.Integer.Long */
 
 
-/*
- * Header
- */
-
-#main-header {
-	position: relative;
-	height: 50px;
-	text-align: center;
-	background-color: #eee;
-	border-bottom: 1px solid #ccc;
-}
-
-
-/*
- * Logo
- */
-
-.logo {
-	position: absolute;
-	display: block;
-	width: 140px;
-	height: 50px;
-	padding: 10px 14px;
-}
-.logo svg {
-	fill: #444444;
-	stroke: #444444;
-	stroke-width: 0.15mm;
-}
-.logo svg:hover {
-	fill: #81b2df;
-	stroke: #81b2df;
-}
-@media (max-width: 410px) {
-	.logo-responsive { display: none; }
-}
-
-
-/*
- * Nav
- */
-
- .nav-main {
-	display: inline-block;
-}
-.nav-main-item {
-	position: relative;
-	float: left;
-	line-height: 1.4;
-	list-style-type: none;
-}
-.nav-main-item a {
-	display: block;
-	padding: 16px 10px 12px;
-	font-family: Verdana, "Microsoft Yahei", Arial, sans-serif;
-	font-weight: 400;
-	font-size: 1.4rem;
-	text-align: left;
-	color: #21242c;
-	text-decoration: none;
-}
-.nav-main-item:hover a {
-	color: #81b2df;
-	border-bottom: 3px solid #81b2df;
-}
-.nav-icon {
-	position: absolute;
-	float: right;
-	display: none;
-	right: 14px;
-	top: 18px;
-}
-
-@media (max-width: 768px) {
-	.nav-main {
-		position: absolute;
-		top: 50px;
-		z-index: 5000 !important;
-		display: none;
-		width: 100%;
-		padding-bottom: 13px;
-		background-color: #eee;
-		opacity: 1;
-	}
-	.nav-main-item {
-		position: relative;
-		width: 100%;
-		list-style-type: none;
-	}
-	.nav-main-item a {
-		display: inline-block;
-		margin: 5px auto;
-		padding: 5px 5px 5px;
-		font-size: 1.5rem;
-  }
-  .nav-main-item:hover a { border-bottom: none; }
-	.nav-icon,
-	.nav-dropdown { display: block; }
-}
-
-
-/*
- * Search
- */
-
-.search-field {
-	position: absolute;
-	top: 13px;
-	right: 14px;
-}
-.search-field input {
-	width: 150px;
-	height: 24px;
-	padding: 2px 6px;
-	font-family: "Microsoft Yahei", Arial, sans-serif;
-	color: #21242c;
-	font-size: 1.4rem;
-	line-height: 1;
-	font-weight: 500;
-	background-color: #f0f1f2;
-	border: 1px solid #c6c6c6;
-	border-radius: 4px;
-	outline: none;
-	-webkit-transition: .5s;
-	-moz-transition: .5s;
-	transition: .5s;
-}
-.search-field input:focus {
-	width: 200px;
-	background-color: #fff;
-	border-color: #81b2df;
-	-webkit-box-shadow: #81b2df 0 0 4px, #81b2df 0 0 3px inset;
-	-moz-box-shadow: #81b2df 0 0 4px,#81b2df 0 0 3px inset;
-	box-shadow: #81b2df 0 0 4px, #81b2df 0 0 3px inset;
-}
-.search-field input:hover { color: #707070; }
-.search-scope,
-.search-close {
-	position: absolute;
-	top: 16px;
-	right: 45px;
-}
-.search-scope,
-.search-close { display: none; }
-
-@media (max-width: 768px) {
-	.search-field {
-    position: absolute;
-    right: 70px;
-    display: none;
-	}
-	.search-scope,
-	.search-visible { display: block; }
-	.search-hidden { display: none; }
-}
-
 
 /*
  * Footer
@@ -404,3 +248,307 @@ code:not([data-lang]) {
 #main-footer .github-svg:hover { fill: #FFFFFF; }
 #main-footer .twitter-svg:hover { fill: #1DA1F2; }
 #main-footer .email-svg:hover { fill: #DC4E41; }
+
+
+
+
+
+
+
+/*
+ * Container
+ */
+
+ #main-container {
+	overflow: hidden;
+	background-color: #f2f2f2;
+}
+
+
+/*
+ * Gallery
+ */
+
+.img-gallery {
+	position: relative;
+	width: 80%;
+	margin: 14px auto;
+}
+.img-gallery ul {
+	overflow: hidden;
+	display: flex;
+	padding: 0;
+	margin: 0 -45px;
+}
+.img-gallery ul li {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	flex: auto;
+	list-style: none;
+	padding: 0;
+	height: 150px;
+	transition: flex .2s .1s;
+}
+.img-gallery ul li:hover { flex: 2.5; }
+.img-gallery img {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	display: block;
+	height: 100%;
+	transform: translate(-50%, 0);
+}
+
+
+
+/* Recent post styles */
+.recent-post {
+	float: left;
+	width: 70%;
+	background: #fbfbfb;
+	padding: 14px;
+	text-align: left;
+	line-height: 1.7;
+	color: #222;
+}
+
+.recent-post .post-title {
+	font-family: ""Trebuchet MS"", "Microsoft Yahei", Arial, sans-serif;
+	line-height: 1.2;
+	padding: 0;
+	margin: 0;
+	color: #222;
+}
+
+.recent-post .post-title h1 {
+	padding: 0;
+	margin: 0;
+}
+
+.recent-post .post-title:hover {
+	color: #0181eb;
+}
+
+.recent-post .post-meta {
+	color: #aaa;
+	padding: 1rem 0;
+	font-weight: bold;
+}
+
+.recent-post p {
+	line-height: 2.4rem;
+	margin-bottom: 1.5rem;
+}
+
+/* Sidebar area styles */
+.sidebar-area {
+	float: right;
+	width: 30%;
+	padding: 0 1em;
+}
+
+.card-area {
+	background-color: #f2f2f2;
+	border: 3px solid #f2f2f2;
+	border-radius: 2px;
+	margin-bottom: 14px;
+	box-shadow: 1px -1px 3px #999, -1px 1px 3px #999;
+}
+
+.card-area:hover {
+	border: 3px solid #aaa;
+}
+
+.card-area .card {
+	display: flex;
+	display: -ms-flexbox;
+	flex-direction: column;
+	-ms-flex-direction: column;
+	transition: all .25s ease-in-out;
+}
+
+.card, .card:link, .card:visited, .card:focus, .card:hover, .card:active {
+	text-decoration: none;
+}
+
+.card-area .card-image {
+	display: block;
+	width: 100%;
+	height: 0;
+	padding-bottom: 75%;
+	background-position: center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	flex: 0 0 auto;
+}
+
+.card-area .card-content {
+	width: 100%;
+	height: 0;
+	padding-bottom: 75%;
+	overflow: hidden;
+}
+
+.card-content header {
+	padding: 1rem .5rem;
+	color: #444;
+	border-bottom: 1px solid #999;
+}
+
+.card-content header h1 {
+	margin: 0;
+	font-size: 2.0rem;
+	line-height: 1em;
+	margin: 0;
+	padding: 0;
+}
+
+.card-area:hover header h1 {
+	color: #aaa;
+}
+
+.card-content section {
+	font-size: 1.4rem;
+	line-height: 1.8rem;
+	padding: 0 0.5rem;
+	color: #444;
+}
+
+
+
+@media (max-width: 980px) {
+
+	.recent-post {
+		float: none;
+		width: auto;
+	}
+
+	.sidebar-area {
+		float: none;
+		width: auto;
+		padding-top: 14px;
+	}
+
+	.card-area:first-child {
+		float: left;
+		width: 49%;
+	}
+
+	.card-area:last-child {
+		float: right;
+		width: 49%;
+	}
+
+	.card-area .card-content {
+		padding-bottom: 50%;
+	}
+
+	.card-area .card-content section {
+		padding-top: 1rem;
+	}
+
+}
+
+@media (max-width: 768px) {
+	.card-area:first-child {
+		width: 49.5%;
+	}
+
+	.card-area:last-child {
+		width: 49.5%;
+	}
+
+	.card-area .card-content {
+		padding-bottom: 75%;
+	}
+
+}
+
+@media (max-width: 600px) {
+	.card-area:first-child, .card-area:last-child {
+		float: none;
+		width: 80%;
+		margin: 0 10% 14px;
+	}
+
+	.card-area .card-content {
+		padding-bottom: 50%;
+	}
+}
+
+@media (max-width: 410px) {
+
+	.card-area:first-child, .card-area:last-child {
+		width: 100%;
+		margin: 0 0 14px;
+	}
+
+	.card-area .card-content {
+		padding-bottom: 75%;
+	}
+}
+
+/* post content css */
+.post-content {
+	width: 100%;
+	padding: 5%;
+	text-align: left;
+	line-height: 1.7;
+	color: #222;
+}
+
+.post-content .post-title {
+	font-family: "Trebuchet MS", "Microsoft Yahei", Arial, sans-serif;
+	text-align: center;
+	font-size: 3rem;
+	line-height: 1.2;
+	padding: 0;
+	margin: 0;
+	color: #222;
+}
+
+.post-content .post-meta {
+	text-align: center;
+	color: #aaa;
+	padding: 1rem 0;
+	font-weight: bold;
+}
+
+.post-content .post-title span {
+	position: relative;
+}
+
+.post-content .post-title span:hover {
+	color: #0181eb;
+}
+
+.post-content .post-title span:before {
+	content: "\2993";
+	position: absolute;
+	left: -26px;
+	top: 0;
+	transition: all .5s ease-in-out 0s;
+	transform: scaleX(0);
+	visibility: hidden;
+}
+
+.post-content .post-title span:after {
+	content: "\2994";
+	position: absolute;
+	top: 0;
+	right: -26px;
+	transition: all .5s ease-in-out 0s;
+	transform: scaleX(0);
+	visibility: hidden;
+}
+
+.post-content .post-title span:hover:before, .post-content .post-title span:hover:after {
+	visibility: visible;
+	transform: scaleX(1);
+}
+
+.post-content p {
+	line-height: 2.4rem;
+	margin-bottom: 1.5rem;
+}
