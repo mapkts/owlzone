@@ -309,19 +309,17 @@ hr {
 	position: relative;
   height: 48px;
   text-align: center;
-	font-size: 1.3rem;
+	font-size: 13px;
 	color: #444;
 	background-color: #aaa;
 }
 #main-footer a { color: #444; }
-#main-footer div:first-child {
+#main-footer .copyright {
 	position: absolute;
-	left: 10px;
 	top: 20px;
 }
-#main-footer div:last-child {
+#main-footer .terms {
 	position: absolute;
-	right: 10px;
 	top: 20px;
 }
 #main-footer .media-link {
