@@ -34,12 +34,7 @@
 		$body = $("body");
 
 	$icon.bind("click", function (e) {
-		e.stopPropagation();
 		$item.toggleClass("nav-dropdown");
-	});
-
-	$body.bind("click", function () {
-		$item.removeClass("nav-dropdown");
 	});
 })();
 
@@ -57,16 +52,13 @@
 		$bar.addClass('search-visible');
 		$logo.addClass('logo-responsive');
 	});
-	$close.bind('click', bindAndRemove);
-	$body.bind('click', bindAndRemove);
 
-	function bindAndRemove (e) {
-		e.stopPropagation();
+	$close.bind('click', function () {
 		$scope.removeClass('search-hidden');
 		$close.removeClass('search-visible');
 		$bar.removeClass('search-visible');
 		$logo.removeClass('logo-responsive');
-	}
+	});
 })();
 
 
