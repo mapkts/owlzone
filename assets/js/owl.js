@@ -41,11 +41,14 @@
 
 
 	Owl.fn = Owl.prototype = {
+
 		constructor: Owl,
 
 		length: 0,
 
 		splice: Array.prototype.splice,
+
+		concat: Array.prototype.concat.call(this, arr),
 
 		toArray: function () {
 			Array.prototype.slice.call(this);

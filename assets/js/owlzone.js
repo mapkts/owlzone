@@ -22,18 +22,23 @@
 
     // if header height has been changed on resize, we need to reset this function;
     $(window).bind("resize", function () {
-        clearTimeout(reset);
-        reset = setTimeout(opacityPercentage, 1000);
+        clearTimeout(resetHeight);
+        resetHeight = setTimeout(opacityPercentage, 1000);
     });
 })();
 
 
 (function toggleNav() {
 	var $item = $("#nav-main"),
-		$icon = $("#nav-icon");
+		$icon = $("#nav-icon"),
+		$body = $("body");
 
 	$icon.bind("click", function () {
 		$item.toggleClass("nav-dropdown");
+	});
+
+	$body.bind("click", function () {
+		$item.removeClass("nav-dropdown");
 	});
 })();
 
@@ -42,7 +47,8 @@
 	var $scope = $('#trigger-search'),
 		$close = $('#collapse-search'),
 		$bar = $('#search-field'),
-		$logo = $('.logo');
+		$logo = $('.logo'),
+		$body = $('body');
 
 	$scope.bind('click', function() {
 		$scope.addClass('search-hidden');
@@ -51,7 +57,7 @@
 		$logo.addClass('logo-responsive');
 	});
 
-	$close.bind('click', function() {
+	$close.concat($body).bind('click', function() {
 		$scope.removeClass('search-hidden');
 		$close.removeClass('search-visible');
 		$bar.removeClass('search-visible');
