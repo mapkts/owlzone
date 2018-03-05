@@ -48,10 +48,6 @@
 
 		splice: ArrProto.splice,
 
-		concat: function (arr) {
-			return	concat.call(this, arr);
-		},
-
 		toArray: function () {
 			Array.prototype.slice.call(this);
 			return this;

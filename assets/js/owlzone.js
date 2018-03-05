@@ -33,7 +33,8 @@
 		$icon = $("#nav-icon"),
 		$body = $("body");
 
-	$icon.bind("click", function () {
+	$icon.bind("click", function (e) {
+		e.stopPropagation();
 		$item.toggleClass("nav-dropdown");
 	});
 
@@ -57,12 +58,22 @@
 		$logo.addClass('logo-responsive');
 	});
 
-	$close.concat($body).bind('click', function() {
+
+	$close.bind('click', function() {
 		$scope.removeClass('search-hidden');
 		$close.removeClass('search-visible');
 		$bar.removeClass('search-visible');
 		$logo.removeClass('logo-responsive');
 	});
+
+	$body.bind('click', function() {
+		$scope.removeClass('search-hidden');
+		$close.removeClass('search-visible');
+		$bar.removeClass('search-visible');
+		$logo.removeClass('logo-responsive');
+	});
+
+
 })();
 
 
