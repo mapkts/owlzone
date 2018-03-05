@@ -22,6 +22,7 @@ exclude:
 # Plugins
 Plugins:
   - jekyll-paginate
+gems: [jekyll-paginate]
 
 # Social
 title:              OwlZone
