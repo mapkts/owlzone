@@ -1,5 +1,10 @@
 /* header.js */
 (function opacityPercentage() {
+	var $header = $("site-header"),
+		$topbar = $(".header-topbar"),
+		$mask = $(".opacity-mask"),
+		height = $header.rect().height,
+		opacity, throttleScroll, resetHeight;
     var animateHeight = $("body > header").rect().height - $(".header-topbar").rect().height,
         opacity, throttleScroll, reset;
 
@@ -7,8 +12,8 @@
             clearTimeout(throttleScroll);
 
             throttleScroll = setTimeout(function () {
-                opacity = pageYOffset/animateHeight;
-                $(".opacity-mask").css("opacity", opacity);
+                opacity = pageYOffset/height;
+                $mask.css("opacity", opacity);
                 if (opacity >= 1) {
                     $(".header-topbar").addClass("topbar-shadow");
                 } else {
