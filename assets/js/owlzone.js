@@ -3,16 +3,14 @@
 	var $header = $(".site-header"),
 		$topbar = $(".header-topbar"),
 		$mask = $(".opacity-mask"),
-		height = $header.rect().height,
+		animateHeight = $header.rect().height - $topbar.rect().height,
 		opacity, throttleScroll, resetHeight;
-    var animateHeight = $("body > header").rect().height - $(".header-topbar").rect().height,
-        opacity, throttleScroll, reset;
 
     $(window).bind("scroll", function () {
             clearTimeout(throttleScroll);
 
             throttleScroll = setTimeout(function () {
-                opacity = pageYOffset/height;
+                opacity = pageYOffset/animateHeight;
                 $mask.css("opacity", opacity);
                 if (opacity >= 1) {
                     $(".header-topbar").addClass("topbar-shadow");
