@@ -46,9 +46,11 @@
 
 		length: 0,
 
-		splice: Array.prototype.splice,
+		splice: ArrProto.splice,
 
-		concat: Array.prototype.concat.call(this),
+		concat: function (arr) {
+			return	concat.call(this, arr);
+		},
 
 		toArray: function () {
 			Array.prototype.slice.call(this);
