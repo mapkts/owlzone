@@ -208,12 +208,12 @@ hr {
 		text-align: left;
 		background-color: #fff;
 		box-shadow: 0 1px 8px rgba(0,0,0,.2);
-		transform: scale3D(0, 0, 1);
+		transform: scale(0);
 		transform-origin: top right;
 		transition: transform .4s cubic-bezier(0.23,1,.32,1);
 	}
 	.nav-dropdown {
-		transform: scale3D(1, 1, 1);
+		transform: scale(1);
 	}
 	.nav-main:before {
 		content: "";

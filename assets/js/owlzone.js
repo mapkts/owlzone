@@ -30,11 +30,18 @@
 
 (function toggleNav() {
 	var $item = $("#nav-main"),
-		$icon = $("#nav-icon"),
-		$body = $("body");
+		$icon = $("#nav-icon");
 
 	$icon.bind("click", function (e) {
 		$item.toggleClass("nav-dropdown");
+	});
+
+	document.addEventListener("click", function (e) {
+		var isClickInside = $icon[0].contains(e.target);
+
+		if (!isClickInside) {
+			$item.removeClass("nav-dropdown");
+		}
 	});
 })();
 
@@ -43,22 +50,24 @@
 	var $scope = $('#trigger-search'),
 		$close = $('#collapse-search'),
 		$bar = $('#search-field'),
-		$logo = $('.logo'),
-		$body = $('body');
+		$logo = $('.logo');
 
-	$scope.bind('click', function() {
+	$scope.bind('click', toggle);
+	$close.bind('click', collapse);
+
+	function toggle(e) {
 		$scope.addClass('search-hidden');
 		$close.addClass('search-visible');
 		$bar.addClass('search-visible');
 		$logo.addClass('logo-responsive');
-	});
+	}
 
-	$close.bind('click', function () {
+	function collapse() {
 		$scope.removeClass('search-hidden');
 		$close.removeClass('search-visible');
 		$bar.removeClass('search-visible');
 		$logo.removeClass('logo-responsive');
-	});
+	}
 })();
 
 

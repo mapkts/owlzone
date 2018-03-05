@@ -19,6 +19,11 @@ exclude:
   - Gemfile
   - README.md
 
+# Plugins
+
 # Social
 title:              OwlZone
-description:        "The reign of night owl."
+description:        "The reign of a night owl."
+
+
+# paginate
