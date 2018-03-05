@@ -57,23 +57,16 @@
 		$bar.addClass('search-visible');
 		$logo.addClass('logo-responsive');
 	});
+	$close.bind('click', bindAndRemove);
+	$body.bind('click', bindAndRemove);
 
-
-	$close.bind('click', function() {
+	function bindAndRemove (e) {
+		e.stopPropagation();
 		$scope.removeClass('search-hidden');
 		$close.removeClass('search-visible');
 		$bar.removeClass('search-visible');
 		$logo.removeClass('logo-responsive');
-	});
-
-	$body.bind('click', function() {
-		$scope.removeClass('search-hidden');
-		$close.removeClass('search-visible');
-		$bar.removeClass('search-visible');
-		$logo.removeClass('logo-responsive');
-	});
-
-
+	}
 })();
 
 
