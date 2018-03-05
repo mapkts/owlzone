@@ -1,6 +1,6 @@
 /* header.js */
 (function opacityPercentage() {
-	var $header = $("site-header"),
+	var $header = $(".site-header"),
 		$topbar = $(".header-topbar"),
 		$mask = $(".opacity-mask"),
 		height = $header.rect().height,
