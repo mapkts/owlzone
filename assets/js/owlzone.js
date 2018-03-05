@@ -14,7 +14,7 @@
                 } else {
                     $(".header-topbar").removeClass("topbar-shadow");
                 }
-        }, 20);
+        }, 10);
     });
 
     // if header height has been changed on resize, we need to reset this function;
