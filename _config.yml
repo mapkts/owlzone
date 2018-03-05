@@ -20,9 +20,8 @@ exclude:
   - README.md
 
 # Plugins
-Plugins:
+plugins:
   - jekyll-paginate
-gems: [jekyll-paginate]
 
 # Social
 title:              OwlZone
