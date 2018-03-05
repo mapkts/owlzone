@@ -2,7 +2,7 @@
 layout: default
 title: Far Greater Proportion
 date: September 04, 1880
-tag: note novel char
+tags: note novel char
 catagory: post horror terror
 ---
 

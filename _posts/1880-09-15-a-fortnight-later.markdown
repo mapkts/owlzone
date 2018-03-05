@@ -2,7 +2,7 @@
 layout: default
 title: A Fortnight Later
 date: September 15, 1880
-tag: note novel char
+tags: note novel char
 catagory: post horror terror
 ---
 

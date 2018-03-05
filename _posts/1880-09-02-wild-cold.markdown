@@ -2,7 +2,7 @@
 layout: default
 title: "Wild, Cold"
 date: September 2, 1880
-tag: note novel
+tags: note novel
 catagory: post horror
 ---
 

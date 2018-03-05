@@ -2,7 +2,7 @@
 layout: default
 title: Business Table
 date: September 07, 1880
-tag: note novel char
+tags: note novel char
 catagory: post horror terror
 ---
 

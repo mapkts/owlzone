@@ -2,7 +2,7 @@
 layout: default
 title: "Search for Mr. Hyde"
 date: September 1, 1880
-tag: note
+tags: note
 catagory: tags: JavaScript Array 算法 慕课网
 ---
 
