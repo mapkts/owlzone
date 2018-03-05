@@ -27,12 +27,12 @@ plugins:
 title:              OwlZone
 description:        "The reign of a night owl."
 
-# url
+# Url
 category_dir: category/
 tag_dir: tag/
 
-# excerpt
+# Excerpt
 excerpt_separator: "\n\n\n\n"
 
-# paginate
+# Paginate
 paginator: 5
