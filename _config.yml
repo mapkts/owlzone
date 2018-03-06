@@ -20,6 +20,8 @@ exclude:
   - README.md
 
 # Plugins
+plugins:
+  - jekyll-paginate
 
 # Social
 title:              OwlZone
@@ -33,5 +35,4 @@ tag_dir: tag/
 excerpt_separator: "\n\n\n\n"
 
 # Paginate
-paginator: 5
-gems: [jekyll-paginate]
+paginate: 5
