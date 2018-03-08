@@ -171,10 +171,16 @@
 			return Owl.map(this, function(el){ return el[property] })
 		},
 
-		bind: function (events, handler) {
+		on: function (events, handler) {
 			return Owl.each(this, function (i, el) {
 				el.addEventListener(events, handler, false);
 			});
+		},
+
+		click: function ("click", handler) {
+			return Owl.each(this, function(i, el) {
+				el.addEventListener(events, handler, false)
+			}
 		},
 
 		unbind: function (events, handler) {

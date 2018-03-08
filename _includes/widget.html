@@ -21,7 +21,7 @@
 
         {% for tag in tags %}
           {% assign base = tag.last.size | divided_by: 4 %}
-          {% assign color = 8 | plus: base %}
+          {% assign color = 8 | minus: base %}
           <span class="tag">
             <a href="/tag/{{ tag | first | slugify }}/" style="font-size: {{ tag | last | size  | times: 4 | plus: 80 }}%; color: #{{ color }}{{ color }}{{ color }};">{{ tag[0] }}</a>
           </span>

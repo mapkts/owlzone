@@ -4,35 +4,52 @@
 		$topbar = $(".header-topbar"),
 		$mask = $(".opacity-mask"),
 		animateHeight = $header.rect().height - $topbar.rect().height,
-		didScroll = false,
-		opacity, throttleScroll, resetHeight;
-
-    $(window).bind("scroll", function () {
-		didScroll = true;
-	});
-
-	setInterval(function () {
-		if (didScroll) {
-			didScroll = false;
-			opacity = pageYOffset/animateHeight;
-			$mask.css("opacity", opacity);
-			if (opacity >= 1) {
-				$(".header-topbar").addClass("topbar-shadow");
-			} else {
-				$(".header-topbar").removeClass("topbar-shadow");
-			}
-		}
-	}, 100);
+		tick = false,
+		opacity, resetHeight;
 
 	var rAF = window.requestAnimationFrame ||
-			  window.webkitRequestAnimationFrame ||
-			  window.mozRequestAnimationFrame ||
-			  window.msRequestAnimationFrame ||
-			  function (callback) { window.setTimeout(callback, 1000/60)};
+			window.webkitRequestAnimationFrame ||
+			window.mozRequestAnimationFrame ||
+			window.msRequestAnimationFrame ||
+			function (callback) { window.setTimeout(callback, 1000/60)};
 
+    $(window).on("scroll", requestTick);
+
+	// setInterval(function () {
+	// 	if (didScroll) {
+	// 		didScroll = false;
+	// 		opacity = pageYOffset/animateHeight;
+	// 		$mask.css("opacity", opacity);
+	// 		if (opacity >= 1) {
+	// 			$(".header-topbar").addClass("topbar-shadow");
+	// 		} else {
+	// 			$(".header-topbar").removeClass("topbar-shadow");
+	// 		}
+	// 	}
+	// }, 100);
+
+
+
+	function update() {
+		tick = false;
+		opacity = pageYOffset/animateHeight;
+		$mask.css("opacity", opacity);
+		if (opacity >= 1) {
+			$topbar.addClass("topbar-shadow");
+		} else {
+			$topbar.removeClass("topbar-shadow");
+		}
+	}
+
+	function requestTick () {
+		if (!tick) {
+			rAF(update);
+			tick = true;
+		}
+	}
 
     // if header height has been changed on resize, we need to reset this function;
-    $(window).bind("resize", function () {
+    $(window).on("resize", function () {
         clearTimeout(resetHeight);
         resetHeight = setTimeout(opacityPercentage, 1000);
     });
@@ -43,7 +60,7 @@
 	var $item = $("#nav-main"),
 		$icon = $("#nav-icon");
 
-	$icon.bind("click", function (e) {
+	$icon.on("click", function (e) {
 		$item.toggleClass("nav-dropdown");
 	});
 
@@ -63,8 +80,8 @@
 		$bar = $('#search-field'),
 		$logo = $('.logo');
 
-	$scope.bind('click', toggle);
-	$close.bind('click', collapse);
+	$scope.on('click', toggle);
+	$close.on('click', collapse);
 
 	function toggle(e) {
 		$scope.addClass('search-hidden');
