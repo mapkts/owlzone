@@ -177,13 +177,7 @@
 			});
 		},
 
-		click: function ("click", handler) {
-			return Owl.each(this, function(i, el) {
-				el.addEventListener(events, handler, false)
-			}
-		},
-
-		unbind: function (events, handler) {
+		off: function (events, handler) {
 			return Owl.each(this, function (i, el) {
 				el.removeEventListener(events, handler, false);
 			});

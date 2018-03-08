@@ -3,6 +3,7 @@
 	var $header = $(".header"),
 		$topbar = $(".header-topbar"),
 		$mask = $(".opacity-mask"),
+		$window = $(window),
 		animateHeight = $header.rect().height - $topbar.rect().height,
 		tick = false,
 		opacity, resetHeight;
@@ -13,24 +14,19 @@
 			window.msRequestAnimationFrame ||
 			function (callback) { window.setTimeout(callback, 1000/60)};
 
-    $(window).on("scroll", requestTick);
+    $window.on("scroll", requestTick);
 
-	// setInterval(function () {
-	// 	if (didScroll) {
-	// 		didScroll = false;
-	// 		opacity = pageYOffset/animateHeight;
-	// 		$mask.css("opacity", opacity);
-	// 		if (opacity >= 1) {
-	// 			$(".header-topbar").addClass("topbar-shadow");
-	// 		} else {
-	// 			$(".header-topbar").removeClass("topbar-shadow");
-	// 		}
-	// 	}
-	// }, 100);
+	// if header height has been changed on resize, we need to reset this function.
+    $window.on("resize", function () {
+        clearTimeout(resetHeight);
+        resetHeight = setTimeout(opacityPercentage, 1000);
+	});
+
+	// apply opacity when page refleshed. (fix reflesh issue)
+	applyOpacity();
 
 
-
-	function update() {
+	function applyOpacity() {
 		tick = false;
 		opacity = pageYOffset/animateHeight;
 		$mask.css("opacity", opacity);
@@ -43,16 +39,10 @@
 
 	function requestTick () {
 		if (!tick) {
-			rAF(update);
+			rAF(applyOpacity);
 			tick = true;
 		}
 	}
-
-    // if header height has been changed on resize, we need to reset this function;
-    $(window).on("resize", function () {
-        clearTimeout(resetHeight);
-        resetHeight = setTimeout(opacityPercentage, 1000);
-    });
 })();
 
 
