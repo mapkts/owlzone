@@ -1,24 +1,35 @@
 /* header.js */
 (function opacityPercentage() {
-	var $header = $(".site-header"),
+	var $header = $(".header"),
 		$topbar = $(".header-topbar"),
 		$mask = $(".opacity-mask"),
 		animateHeight = $header.rect().height - $topbar.rect().height,
+		didScroll = false,
 		opacity, throttleScroll, resetHeight;
 
     $(window).bind("scroll", function () {
-            clearTimeout(throttleScroll);
+		didScroll = true;
+	});
 
-            throttleScroll = setTimeout(function () {
-                opacity = pageYOffset/animateHeight;
-                $mask.css("opacity", opacity);
-                if (opacity >= 1) {
-                    $(".header-topbar").addClass("topbar-shadow");
-                } else {
-                    $(".header-topbar").removeClass("topbar-shadow");
-                }
-        }, 10);
-    });
+	setInterval(function () {
+		if (didScroll) {
+			didScroll = false;
+			opacity = pageYOffset/animateHeight;
+			$mask.css("opacity", opacity);
+			if (opacity >= 1) {
+				$(".header-topbar").addClass("topbar-shadow");
+			} else {
+				$(".header-topbar").removeClass("topbar-shadow");
+			}
+		}
+	}, 100);
+
+	var rAF = window.requestAnimationFrame ||
+			  window.webkitRequestAnimationFrame ||
+			  window.mozRequestAnimationFrame ||
+			  window.msRequestAnimationFrame ||
+			  function (callback) { window.setTimeout(callback, 1000/60)};
+
 
     // if header height has been changed on resize, we need to reset this function;
     $(window).bind("resize", function () {

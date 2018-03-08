@@ -3,7 +3,7 @@ layout: default
 title: Business Table
 date: September 07, 1880
 tags: note novel char
-catagory: post horror terror
+categories: post horror terror
 ---
 
 Next they turned to the business table. On the desk, among the neat array of papers, a large envelope was uppermost, and bore, in the doctor's hand, the name of Mr. Utterson. The lawyer unsealed it, and several enclosures fell to the floor. The first was a will, drawn in the same eccentric terms as the one which he had returned six months before, to serve as a testament in case of death and as a deed of gift in case of disappearance; but in place of the name of Edward Hyde, the lawyer, with indescribable amazement read the name of Gabriel John Utterson. He looked at Poole, and then back at the paper, and last of all at the dead malefactor stretched upon the carpet.

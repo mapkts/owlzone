@@ -6,23 +6,24 @@
 <body>
 {% include header.html %}
 
-<main id="main-container">
+	<main class="container">
 
-	<section id="content" class="post-content">
-		<article>
-			<h1 class="post-title"><span>{{ page.title }}</span></h1>
-			<div class="post-meta">
-				<time>{{ site.time | date_to_string }}</time>
-			</div>
+		<section class="post-content center">
+			<article>
+				<h1 class="post-title">{{ page.title }}</h1>
+				<div class="post-meta">
+					<time>{{ site.time | date_to_string }}</time>
+				</div>
 
-			{{ content }}
+				{{ content }}
 
-		</article>
-	</section>	<!-- End of post-content -->
+			</article>
+		</section>
 
-</main>	<!-- End of Main -->
-	{% include footer.html %}
+	</main>
 
-	{% include scripts.html %}
+{% include footer.html %}
+
+{% include scripts.html %}
 </body>
 </html>

@@ -1,0 +1,31 @@
+  <aside class="widget-area center">
+    <section class="widget post-category">
+      <h3 class="widget-title">Category</h3>
+      <ul>
+          {% for category in site.categories %}
+          <li>
+              <svg class="circle-svg" width="20" height="20" viewBox="-24 -24 48 48"><path d="M 0,0 m 0,-22 a 22,22 0 1 1 0,44 a 22,22 0 1 1 0,-44" stroke="#ccc" stroke-width="4" style="fill-opacity: 0;"></path><path class="svg-path" d="M 0,0 m 0,-22 a 22,22 0 1 1 0,44 a 22,22 0 1 1 0,-44" stroke="#1863a1" stroke-width="4" style="fill-opacity: 0; stroke-linecap: round; stroke-dasharray: 150px; stroke-dashoffset: 150px;"></path></svg>
+              <a href="{{ root_url }}/{{ site.category_dir }}#{{ category | first }}" class="categories-list-item" cate="{{ category | first }}">
+                <span class="name">{{ category | first }}</span>
+                <span class="badge">({{ category | last | size }}) </span>
+              </a>
+          </li>
+          {% endfor %}
+      </ul>
+    </section>
+
+    <section class="widget">
+      <h3 class="widget-title">Tag cloud</h3>
+      <div class="tag-cloud">
+        {% assign tags = site.tags | sort %}
+
+        {% for tag in tags %}
+          {% assign base = tag.last.size | divided_by: 4 %}
+          {% assign color = 8 | plus: base %}
+          <span class="tag">
+            <a href="/tag/{{ tag | first | slugify }}/" style="font-size: {{ tag | last | size  | times: 4 | plus: 80 }}%; color: #{{ color }}{{ color }}{{ color }};">{{ tag[0] }}</a>
+          </span>
+        {% endfor %}
+      </div>
+    </section>
+  </aside>

@@ -3,7 +3,7 @@ layout: default
 title: Far Greater Proportion
 date: September 04, 1880
 tags: note novel char
-catagory: post horror terror
+categories: post horror terror
 ---
 
 The far greater proportion of the building was occupied by the theatre, which filled almost the whole ground storey and was lighted from above, and by the cabinet, which formed an upper story at one end and looked upon the court. A corridor joined the theatre to the door on the by-street; and with this the cabinet communicated separately by a second flight of stairs. There were besides a few dark closets and a spacious cellar. All these they now thoroughly examined. Each closet needed but a glance, for all were empty, and all, by the dust that fell from their doors, had stood long unopened.

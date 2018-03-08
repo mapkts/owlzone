@@ -2,101 +2,37 @@
 layout: home
 title: Hello World!
 ---
-
-
-
-<div class="post-area">
-	<ul>
-		{% for post in site.posts limit: 3 %}
-		<h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
-
-		<div class="row">
-			<div class="twelve columns">
-				{{ post.content }}
-			</div>
-		</div>
-		{% endfor %}
-
-		{% for post in paginator.posts %}
-		<li>
-			<h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
-
-			<div class="label">
-
-			</div>
-
-			<div class="excerpt">
-				{{ post.excerpt }}
-			</div>
-
-			<div class="read-more">
-				<a  href="{{ post.url }}">Read More</a>
-			</div>
-
-			<hr>
-		</li>
-		{% endfor %}
-	</ul>
-
-	<!-- Pagination links -->
-	<div class="pagination">
-		{% if paginator.previous_page %}
-			<a href="/index.html" class="previous"><i class="fa fa-angle-double-left"></i></a>
-			<a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="previous"><i class="fa fa-angle-left"></i></a>
-		{% else %}
-			<span class="previous disable"><i class="fa fa-angle-double-left"></i></span>
-			<span class="previous disable"><i class="fa fa-angle-left"></i></span>
-		{% endif %}
-		<span class="page_number ">{{ paginator.page }}/{{ paginator.total_pages }}</span>
-		{% if paginator.next_page %}
-			<a href="{{ paginator.next_page_path }}" class="next"><i class="fa fa-angle-right"></i></a>
-			<a href="{{ site.baseurl }}/page{{ paginator.total_pages }}" class="next"><i class="fa fa-angle-double-right"></i></a>
-		{% else %}
-			<span class="next disable"><i class="fa fa-angle-right"></i></span>
-			<span class="next disable"><i class="fa fa-angle-double-right"></i></span>
-		{% endif %}
-	</div>
-</div>
-
-
-<aside class="widget-area">
-	<section class="widget">
-		<h3 class="widget-title">Recent Posts</h3>
+	<div class="post-area">
 		<ul>
-			{% for post in site.posts offset: 3 limit: 10 %}
-			<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+			{% for post in paginator.posts %}
+			<li>
+				<div class="post-date"><time>{{ post.date | date_to_string }}</time></div>
+
+				<h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+				<hr>
+				{% unless post.categories.size == '0' %}
+				<span class="ribbon"><a href="{{ root_url }}/{{ site.category_dir }}#{{ post.categories.first }}" title="Category: {{ post.categories.first }}" rel="category"><span>{{ post.categories.first }}</span></a></span>
+				{% endunless %}
+
+				<div class="post-excerpt">
+					{{ post.content | truncatewords: 100 }}
+				</div>
+			</li>
 			{% endfor %}
 		</ul>
-	</section>
 
-	<section class="widget">
-		<h3 class="widget-title">Tag cloud</h3>
-		<div class="tag-cloud">
-			{% assign tags = site.tags | sort %}
-			{% for tag in tags %}
-			 <span class="site-tag">
-					<a href="/tag/{{ tag | first | slugify }}/"
-							style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}%">
-									{{ tag[0] | replace:'-', ' ' }} ({{ tag | last | size }})
-					</a>
-			</span>
-			{% endfor %}
+
+		<div class="pagination center">
+			{% if paginator.previous_page %}
+				<a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="previous">
+					<span>← Prev</span>
+				</a>
+			{% endif %}
+			<span class="page-number ">{{ paginator.page }}/{{ paginator.total_pages }}</span>
+			{% if paginator.next_page %}
+				<a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="next">
+					<span>Next →</span>
+				</a>
+			{% endif %}
 		</div>
-	</section>
-
-	<section class="widget">
-		<h3>Categories</h3>
-		<ul class="content-ul" cate>
-				{% for category in site.categories %}
-				<li>
-						<a href="{{ root_url }}/{{ site.category_dir }}#{{ category | first }}" class="categories-list-item" cate="{{ category | first }}">
-								<span class="name">
-										{{ category | first }}
-								</span>
-								<span class="badge">{{ category | last | size }}</span>
-						</a>
-				</li>
-				{% endfor %}
-		</ul>
-	</section>
-</aside>
+	</div>

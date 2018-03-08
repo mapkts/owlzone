@@ -3,7 +3,7 @@ layout: default
 title: "Wild, Cold"
 date: September 2, 1880
 tags: note novel
-catagory: post horror
+categories: post horror
 ---
 
 It was a wild, cold, seasonable night of March, with a pale moon, lying on her back as though the wind had tilted her, and flying wrack of the most diaphanous and lawny texture. The wind made talking difficult, and flecked the blood into the face. It seemed to have swept the streets unusually bare of passengers, besides; for Mr. Utterson thought he had never seen that part of [London so deserted](http://google.com).
