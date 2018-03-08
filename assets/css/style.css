@@ -665,6 +665,10 @@ p { margin: .5em 0; }
 .archive li {
 	list-style-type: disc;
 }
+.archive li:hover {
+	background-color: rgba(0,0,0,.03);
+	transition: all .3s ease-in-out;
+}
 .archive li time {
 	padding-right: 16px;
 	font-size: 1em;
