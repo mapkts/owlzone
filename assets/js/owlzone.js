@@ -14,16 +14,14 @@
 			window.msRequestAnimationFrame ||
 			function (callback) { window.setTimeout(callback, 1000/60)};
 
-    $window.on("scroll", requestTick);
+	$window.on("scroll", requestTick);
 
-	// if header height has been changed on resize, we need to reset this function.
+	// fix issues: reflesh page and resize window.
+	applyOpacity();
     $window.on("resize", function () {
         clearTimeout(resetHeight);
         resetHeight = setTimeout(opacityPercentage, 1000);
 	});
-
-	// apply opacity when page refleshed. (fix reflesh issue)
-	applyOpacity();
 
 
 	function applyOpacity() {
@@ -90,11 +88,11 @@
 
 
 /* codeBanner.js */
-(function codeBannerUtils() {
-	var el = document.getElementsByClassName('highlight');
-	var langList = [];
-	for(var i = 0; i < el.length; i++) {
-		langList.push(el[i].firstChild.firstChild.dataset.lang);
-		el[i].setAttribute('data-lang', langList[i]);
-	}
-})();
+// (function codeBannerUtils() {
+// 	var el = document.getElementsByClassName('highlight');
+// 	var langList = [];
+// 	for(var i = 0; i < el.length; i++) {
+// 		langList.push(el[i].firstChild.firstChild.dataset.lang);
+// 		el[i].setAttribute('data-lang', langList[i]);
+// 	}
+// })();

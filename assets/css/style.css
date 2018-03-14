@@ -30,11 +30,15 @@ footer,header,hgroup,menu,nav,section {
 body {
 	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Helvetica,"Microsoft Yahei",sans-serif;;
 	line-height: 1.5;
-  background: #eee;
+  /* background: #eee; */
 }
 
-::selection { background-color: #add8e6; }
-a::selection { color: #222; }
+::selection {
+	background-color: #add8e6;
+}
+a::selection {
+	color: #222;
+}
 
 a {
 	color: #1863a1;
@@ -49,24 +53,60 @@ a {
 a:focus,
 a:hover {
 	color: #0181eb;
-	text-decoration: underline;
+	text-decoration: underline
 }
-a:active { color: #f05230; }
+a:active {
+	color: #f05230;
+}
 
-li { list-style-type: none; }
+h1 {
+	font-size: 48px;
+	font-size: 3rem;
+	line-height: 1;
+}
+h2 {
+	font-size: 32px;
+	font-size: 2rem;
+	line-height: 1.2;
+}
+h3 {
+	font-size: 24px;
+	font-size: 1.5rem;
+	line-height: 1.2;
+}
+h4 {
+	margin: 30px 0 20px;
+	font-size: 22px;
+	font-size: 1.375rem;
+	line-height: 1.2;
+}
+h5 {
+	font-size: 16px;
+	font-size: 1rem;
+}
+h6 {
+	font-size: 16px;
+	font-size: 1rem;
+}
+
+li {
+	list-style-type: none;
+}
 
 hr {
 	border-top: 1px solid #ccc;
 	margin: 20px 0;
 }
 
-p { margin: 1em 0; }
+p {
+	margin: 1em 0;
+}
 
 
 /*
  * Layout
  */
-.constrained {
+.dense {
   max-width: 980px;
   margin: 0 auto;
 }
@@ -75,10 +115,15 @@ p { margin: 1em 0; }
   padding-right: 16px;
 }
 
-/*
- * helpers
- */
 
+/*
+ * Helpers
+ */
+.clear:after {
+	content: "";
+	display: table;
+	clear: both;
+}
 
 
 /*
@@ -107,10 +152,10 @@ p { margin: 1em 0; }
 .has-custom-image {
 	background-image: url("http://owlzone.org/assets/img/owl-and-rat.jpg");
   background-position: center;
-  background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+  background-size: cover;
 }
 .opacity-mask {
     opacity: 0;
@@ -158,7 +203,9 @@ p { margin: 1em 0; }
 }
 
 @media (max-width: 410px) {
-	.logo-responsive { display: none; }
+	.logo-responsive {
+		display: none;
+	}
 }
 
 
@@ -277,7 +324,9 @@ p { margin: 1em 0; }
 	-moz-box-shadow: #81b2df 0 0 4px,#81b2df 0 0 3px inset;
 	box-shadow: #81b2df 0 0 4px, #81b2df 0 0 3px inset;
 }
-.search-field input:hover { color: #707070; }
+.search-field input:hover {
+	color: #707070;
+}
 ::placeholder {
   color: #fff;
   opacity: 1; /* Firefox */
@@ -398,9 +447,9 @@ p { margin: 1em 0; }
 
 /* Post area */
 .post-area {
-	float: left;
+	float: right;
 	width: 70%;
-	padding-right: 16px;
+	padding: 0 16px;
 	text-align: left;
 	color: #222;
 }
@@ -526,9 +575,9 @@ p { margin: 1em 0; }
 
 /* Widget area */
 .widget-area {
-	float: right;
+	float: left;
 	width: 30%;
-	background-color: #f4f4f4;
+	background-color: #f8f8f8;
 	padding: 16px;
 }
 @media (max-width: 980px) {
