@@ -5,16 +5,22 @@
 		$mask = $(".opacity-mask"),
 		$window = $(window),
 		animateHeight = $header.rect().height - $topbar.rect().height,
-		opacity, timer, reset;
+		opacity, timer, reset,
+		last = 0,
+		timeGap = 50;
 
 	$window.on("scroll", function () {
-		if (timer) {
-			clearTimeout(timer);
+		var now = new Date().getTime();
+
+		if (!timer) {
+			if (now - last > timeGap) {
+				timer = setTimeout(function () {
+					last = new Date().getTime();
+					applyOpacity();
+					timer = null;
+				}, timeGap)
+			}
 		}
-		timer = setTimeout(function () {
-			console.log("firing!");
-			applyOpacity();
-		}, 50);
 	});
 
 	// fix issues: reflesh page and resize window.

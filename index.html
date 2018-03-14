@@ -5,7 +5,7 @@ title: Hello World!
 	<div class="post-area">
 		<ul class="flex-items">
 			{% for post in paginator.posts %}
-			<li>
+			<li class="flex-item">
 				<div class="card">
 					<div class="card-image" href="{{ post.url }}"></div>
 					<div class="post-date"><time>{{ post.date | date_to_string }}</time></div>
