@@ -20,7 +20,11 @@ title: Hello World!
 						{{ post.content | truncatewords: 50 }}
 					</div>
 
-					<div class="post-tag"></div>
+					<div class="post-tags">
+							{% for tag in tags %}
+							<span class="tag {{ tag }}">{{ tag }}</span>
+							{% endfor %}
+					</div>
 				</div>
 			</li>
 			{% endfor %}
