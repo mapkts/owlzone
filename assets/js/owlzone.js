@@ -110,14 +110,10 @@ var icons = {
 
 (function appendSvgs() {
 	var tags = $(".post-tags .tag");
-	tags.each(function (i, span) {
-		var tag = span.className.slice(4);
+	tags.each(function (i, a) {
+		var tag = a.className.slice(4);
 		if (tag in icons) {
-			var node = document.createElement("div");
-			var tooltipFirstRow = tags.find(".tooltop .row:first-child");
-			node.innerHTML = icons[tag];
-			tooltipFirstRow.innerHTML = icons[tags];
-			span.appendChild(node);
+			a.innerHTML = icons[tag];
 		}
 	})
 })();
