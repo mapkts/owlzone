@@ -407,8 +407,13 @@ p {
 .container {
 	padding-top: 20px;
 	padding-bottom: 20px;
+	overflow: hidden;
 }
-
+@media (max-width: 620px) {
+	.container {
+		overflow: visible;
+	}
+}
 
 /*
  * Gallery
@@ -468,7 +473,8 @@ p {
 }
 @media (max-width: 620px) {
 	.flex-item {
-		max-width: 100%
+		max-width: 100%;
+		top: -50px;
 	}
 }
 .card {

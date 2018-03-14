@@ -6,15 +6,10 @@
 		$window = $(window),
 		animateHeight = $header.rect().height - $topbar.rect().height,
 		opacity, timer, reset,
-		timeGap = 50;
+		ticking = false;
 
 	$window.on("scroll", function () {
-		if (!timer) {
-			timer = setTimeout(function () {
-				applyOpacity();
-				timer = null;
-			}, timeGap)
-		}
+		requestTick();
 	});
 
 	// fix issues: reflesh page and resize window.
@@ -29,6 +24,13 @@
 		}
 	});
 
+	function requestTick() {
+		if (!ticking) {
+			requestAnimationFrame(applyOpacity);
+			ticking = true;
+		}
+	}
+
 	function applyOpacity() {
 		opacity = pageYOffset/animateHeight;
 		$mask.css("opacity", opacity);
@@ -37,6 +39,7 @@
 		} else {
 			$topbar.removeClass("topbar-shadow");
 		}
+		ticking = false;
 	}
 })();
 
