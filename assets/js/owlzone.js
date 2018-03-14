@@ -6,20 +6,14 @@
 		$window = $(window),
 		animateHeight = $header.rect().height - $topbar.rect().height,
 		opacity, timer, reset,
-		last = 0,
 		timeGap = 50;
 
 	$window.on("scroll", function () {
-		var now = new Date().getTime();
-
 		if (!timer) {
-			if (now - last > timeGap) {
-				timer = setTimeout(function () {
-					last = new Date().getTime();
-					applyOpacity();
-					timer = null;
-				}, timeGap)
-			}
+			timer = setTimeout(function () {
+				applyOpacity();
+				timer = null;
+			}, timeGap)
 		}
 	});
 
