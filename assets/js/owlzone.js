@@ -21,8 +21,12 @@
 	applyOpacity();
 
     $window.on("resize", function () {
-        clearTimeout(reset);
-        reset = setTimeout(opacityPercentage, 1000);
+        if (!reset) {
+			reset = setTimeout(function () {
+				opacityPercentage();
+				reset = null;
+			}, 1000)
+		}
 	});
 
 	function applyOpacity() {
