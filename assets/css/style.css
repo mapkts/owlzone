@@ -483,6 +483,7 @@ p {
 	padding-bottom: 10px;
 }
 .post-image {
+	display: block;
 	height: 180px;
 	background-position: center;
 	background-size: cover;

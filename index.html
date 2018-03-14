@@ -11,12 +11,12 @@ title: Hello World!
 					<a class="post-image" href="{{ post.url }}" style="background-image: url(http://owlzone.org/assets/img/owl-and-rat.jpg)"></a>
 					{% endif %}
 
-					<div class="post-date"><time>{{ post.date | date_to_string }}</time></div>
-
 					<h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
 
+					<div class="post-date"><time>{{ post.date | date_to_string }}</time></div>
+
 					<div class="post-excerpt">
-						{{ post.content | truncatewords: 50 }}
+						{{ post.content | truncatewords: 40 }}
 					</div>
 
 					<div class="post-info">
