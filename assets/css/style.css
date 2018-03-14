@@ -503,11 +503,15 @@ p {
 }
 .post-info {
 	line-height: 1;
+	height: 24px;
 }
 .post-info .tag {
 	display: inline-block;
 	padding-right: 5px;
 	height: 24px;
+}
+.post-info .tag svg {
+	width: 24px;
 }
 .post-info .tag:hover,
 .post-info .tag:focus {
@@ -516,7 +520,6 @@ p {
 .post-info .read-more {
 	float: right;
 	padding: 0 5px;
-	height: 24px;
 	line-height: 1.5;
 }
 .post-info .read-more:hover,
