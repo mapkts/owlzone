@@ -16,12 +16,13 @@
 	applyOpacity();
 
     $window.on("resize", function () {
-        if (!reset) {
-			reset = setTimeout(function () {
-				opacityPercentage();
-				reset = null;
-			}, 1000)
+        if (reset) {
+			clearTimeout(reset);
 		}
+		reset = setTimeout(function () {
+			opacityPercentage();
+			reset = null;
+		}, 1000)
 	});
 
 	function requestTick() {
