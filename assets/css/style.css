@@ -480,16 +480,28 @@ p {
 }
 .post-card {
 	background-color: #f8f8f8;
-	padding: 16px;
 	padding-bottom: 10px;
+}
+.post-image {
+	background-image: url(http://owlzone.org/assets/img/owl-and-rat.jpg);
+	height: 180px;
+	background-position: center;
+	background-size: cover;
+}
+a.post-image:hover {
+	filter: grayscale(1);
+	transition: all .3s ease-in-out;
 }
 .post-date {
 	color: #aaa;
-	font-weight: bold;
+	font-size: 13px;
+	font-weight: 700;
+	color: #666;
 }
 .post-title {
+	padding: 10px 16px 0px;
 	font-size: 20px;
-	padding: 5px 0;
+	font-weight: 900;
 }
 .post-title:hover {
 	color: #0181eb;
@@ -497,13 +509,31 @@ p {
 .post-title a {
 	text-decoration: none;
 }
+.post-date {
+	position: relative;
+	padding: 0 16px;
+	font-size: 13px;
+	font-weight: 900;
+	color: #666;
+}
+.post-date:after {
+	content: "";
+	width: 200px;
+	border: 1px dashed rgba(0,0,0,.2);
+	position: absolute;
+	top: 12px;
+	left: 104px;
+}
+.post-excerpt {
+	padding: 10px 16px;
+}
 .post-excerpt p {
 	margin: 0;
-	padding-bottom: 10px;
 }
 .post-info {
-	line-height: 1;
+	padding: 0 16px;
 	height: 24px;
+	line-height: 1;
 }
 .post-info .tag {
 	display: inline-block;
