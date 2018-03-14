@@ -8,24 +8,26 @@
 		tick = false,
 		opacity, resetHeight;
 
-	var rAF = window.requestAnimationFrame ||
-			window.webkitRequestAnimationFrame ||
-			window.mozRequestAnimationFrame ||
-			window.msRequestAnimationFrame ||
-			function (callback) { window.setTimeout(callback, 1000/60)};
+	$window.on("scroll", function () {
+		tick = true;
+	});
 
-	$window.on("scroll", requestTick);
+	setInterval(function () {
+		if (tick) {
+			tick = false;
+			applyOpacity();
+		}
+	}, 100)
 
 	// fix issues: reflesh page and resize window.
 	applyOpacity();
+
     $window.on("resize", function () {
         clearTimeout(resetHeight);
         resetHeight = setTimeout(opacityPercentage, 1000);
 	});
 
-
 	function applyOpacity() {
-		tick = false;
 		opacity = pageYOffset/animateHeight;
 		$mask.css("opacity", opacity);
 		if (opacity >= 1) {
@@ -35,12 +37,6 @@
 		}
 	}
 
-	function requestTick () {
-		if (!tick) {
-			rAF(applyOpacity);
-			tick = true;
-		}
-	}
 })();
 
 
