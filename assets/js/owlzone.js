@@ -5,26 +5,24 @@
 		$mask = $(".opacity-mask"),
 		$window = $(window),
 		animateHeight = $header.rect().height - $topbar.rect().height,
-		tick = false,
-		opacity, resetHeight;
+		opacity, timer, reset;
 
 	$window.on("scroll", function () {
-		tick = true;
-	});
-
-	setInterval(function () {
-		if (tick) {
-			tick = false;
-			applyOpacity();
+		if (timer) {
+			clearTimeout(timer);
 		}
-	}, 100)
+		timer = setTimeout(function () {
+			console.log("firing!");
+			applyOpacity();
+		}, 50);
+	});
 
 	// fix issues: reflesh page and resize window.
 	applyOpacity();
 
     $window.on("resize", function () {
-        clearTimeout(resetHeight);
-        resetHeight = setTimeout(opacityPercentage, 1000);
+        clearTimeout(reset);
+        reset = setTimeout(opacityPercentage, 1000);
 	});
 
 	function applyOpacity() {
@@ -36,7 +34,6 @@
 			$topbar.removeClass("topbar-shadow");
 		}
 	}
-
 })();
 
 
