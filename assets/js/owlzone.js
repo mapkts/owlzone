@@ -6,7 +6,8 @@
 		$window = $(window),
 		animateHeight = $header.rect().height - $topbar.rect().height,
 		opacity, timer, reset,
-		ticking = false;
+		ticking = false,
+		resized = false;
 
 	$window.on("scroll", function () {
 		requestTick();
@@ -16,14 +17,16 @@
 	applyOpacity();
 
     $window.on("resize", function () {
-        if (reset) {
-			clearTimeout(reset);
-		}
-		reset = setTimeout(function () {
-			opacityPercentage();
-			reset = null;
-		}, 1000)
+        resized = true;
 	});
+
+	setInterval(function () {
+		if (resized) {
+			resized = false;
+			animateHeight = $header.rect().height - $topbar.rect().height;
+			applyOpacity();
+		}
+	}, 2000)
 
 	function requestTick() {
 		if (!ticking) {
