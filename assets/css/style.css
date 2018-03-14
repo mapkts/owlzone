@@ -405,7 +405,6 @@ p {
  * Container
  */
 .container {
-	overflow: hidden;
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
@@ -451,7 +450,7 @@ p {
 .post-area {
 	float: right;
 	width: 70%;
-	padding: 0 16px;
+	/* padding: 0 16px; */
 	text-align: left;
 	color: #222;
 }
