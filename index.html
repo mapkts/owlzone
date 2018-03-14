@@ -8,7 +8,7 @@ title: Hello World!
 			<li class="flex-item">
 				<div class="post-card">
 					{% if post.image %}
-					<div class="post-image" href="{{ post.url }}" style="background-image: {{ post.image | prepend: site.baseurl }}"></div>
+					<a class="post-image" href="{{ post.url }}" style="background-image: url(http://owlzone.org/assets/img/owl-and-rat.jpg)"></a>
 					{% endif %}
 
 					<div class="post-date"><time>{{ post.date | date_to_string }}</time></div>
