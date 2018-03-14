@@ -561,7 +561,6 @@ p {
 /* Pagination */
 .pagination {
 	position: relative;
-	top: -20px;
 	border-top: 1px dashed #666;
 	color: #666;
 	line-height: 3;
