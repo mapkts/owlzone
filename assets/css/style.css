@@ -103,12 +103,11 @@ p {
 }
 
 blockquote {
-	quotes: "\201C""\201D""\2018""\2019";
 	margin: 1.5em 10px;
 	padding: 0.5em 10px;
 	font-size: 0.95em;
-	background-color: #eee;
-	border-left: 5px solid #ccc;
+	background-color: #ddd;
+	border-left: 5px solid #aaa;
 }
 blockquote p { display: inline; }
 
@@ -755,6 +754,10 @@ a.post-image:hover {
 .post-content ol {
 	padding-left: 20px;
 }
+.post-content li {
+	list-style-type: disc;
+}
+
 
 
 /* Archive page  */
@@ -806,13 +809,16 @@ a.post-image:hover {
 	padding-left: 10px;
 	padding-top: 20px;
 	font-family: Consolas, Menlo, Monaco, "Lucida Console", "Courier New", monospace, serif;
-	font-size: 1.4rem;
-	line-height: 1.5;
+	font-size: 14px;
 	border-radius: 4px;
 	background: #eee;
 	-moz-tab-size: 2;
 	-o-tab-size: 2;
 	tab-size: 2;
+	border: 1px solid rgba(0,0,0,.2);
+	background-image: linear-gradient(rgba(255, 255, 255, .4) 50%, transparent 50%, transparent);
+	background-size: 3em 3em;
+	background-origin: content-box;
 }
 
 .highlight[data-lang]:before {
@@ -822,6 +828,7 @@ a.post-image:hover {
 	left: 0;
 	width: 100%;
 	padding-left: inherit;
+	font-size: inherit;
 	color: #fff;
 	background-color:  #1863a1;
 	border-top-left-radius: 4px;
