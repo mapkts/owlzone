@@ -838,7 +838,7 @@ a.post-image:hover {
 	border-top-left-radius: 4px;
 	border-top-right-radius: 4px;
 }
-highlight[data-lang]:after {
+.highlight[data-lang]:after {
 	content: "";
 	position: absolute;
 	top: 10px;
