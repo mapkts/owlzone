@@ -623,6 +623,9 @@ a.post-image:hover {
 		float: none;
 		width: auto;
 	}
+	.widget-area .inner {
+		width: auto;
+	}
 }
 @media (min-width: 980px) {
 	.fixed {
