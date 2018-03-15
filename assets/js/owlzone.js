@@ -49,9 +49,9 @@
 	}
 
 	function fixSidebar() {
-		if (pageYOffset > 280 && !$sidebar.hasClass('fixed')) {
+		if ( pageYOffset > 280 && !$sidebar.hasClass('fixed') ) {
 			$sidebar.addClass('fixed').css('top', '50px');
-		} else if ($sidebar.hasClass('fixed')) {
+		} else if ( pageYOffset < 280 && $sidebar.hasClass('fixed') ) {
 			$sidebar.removeClass('fixed');
 		}
 	}
