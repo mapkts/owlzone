@@ -4,6 +4,7 @@
 		$topbar = $(".header-topbar"),
 		$mask = $(".opacity-mask"),
 		$window = $(window),
+		$sidebar = $('.widget-area'),
 		animateHeight = $header.rect().height - $topbar.rect().height,
 		opacity, timer, reset,
 		ticking = false,
