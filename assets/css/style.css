@@ -828,23 +828,22 @@ a.post-image:hover {
 	content: attr(data-lang);
 	position: absolute;
 	top: 0;
-	left: 0;
+	left: 40px;
 	width: 100%;
-	padding-left: inherit;
+	padding-left: 16px;
 	font-size: inherit;
-	color: #fff;
-	background-image: url('http://owlzone.org/assets/img/code.svg');
-	background-color:  #1863a1;
-	border-top-left-radius: 4px;
-	border-top-right-radius: 4px;
+	color: #1863a1;
+	background-color: rgba(50,50,50,.1);
 }
 .highlight[data-lang]:after {
 	content: "";
 	position: absolute;
-	top: 10px;
-	left: 20px;
-	background: url(http://owlzone.org/assets/img/code.svg);
-	/* background-color: #1863a1; */
+	top: -17px;
+	left: 16px;
+	width: 21px;
+	height: 54px;
+	transform: rotate(-90deg);
+	background: url(http://owlzone.org/assets/img/code.svg) 0 0 no-repeat;
 }
 
 code:not([data-lang]) {
