@@ -49,9 +49,9 @@
 
 	function fixSidebar() {
 		if (pageYOffset > 280) {
-			$sidebar.css('position', 'fixed').css('top', '50px');
+			$sidebar.addClass('fixed').css('top', '50px');
 		} else {
-			$sidebar.css('position', 'static');
+			$sidebar.removeClass('fixed');
 		}
 	}
 })();

@@ -624,6 +624,11 @@ a.post-image:hover {
 		width: auto;
 	}
 }
+@media (min-width: 980px) {
+	.fixed {
+		position: fixed;
+	}
+}
 .widget:not(:last-child) {
 	margin-bottom: 40px;
 }
