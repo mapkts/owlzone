@@ -8,7 +8,7 @@ title: Hello World!
 			<li class="flex-item">
 				<div class="post-card">
 					{% if post.image %}
-					<a class="post-image" href="{{ post.url }}" style="background-image: url('{{ site.baseurl }}/{% if page.image %}{{ page.image }}{% endif %}');"></a>
+					<a class="post-image" href="{{ post.url }}" style="background-image: url('{{ site.baseurl }}/{% if post.image %}{{ post.image }}{% endif %}');"></a>
 					{% endif %}
 
 					<h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
