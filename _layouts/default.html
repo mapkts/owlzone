@@ -4,7 +4,14 @@
 {% include head.html %}
 </head>
 <body>
-{% include header.html %}
+	<header class="header"  role="navigation">
+		{% if post.image %}
+		<div class="header-background has-custom-image" style="background-image: url('{{ post.image }}')"></div>
+		{% else %}
+		<div class="header-background has-custom-image"></div>
+		{% endif %}
+		{% include header.var.html %}
+	</header>
 
 	<main class="container">
 
