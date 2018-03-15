@@ -99,7 +99,7 @@ hr {
 }
 
 p {
-	margin: 1em 0;
+	margin-bottom: 1em;
 }
 
 
@@ -492,14 +492,8 @@ a.post-image:hover {
 	filter: grayscale(1);
 	transition: all .3s ease-in-out;
 }
-.post-date {
-	color: #aaa;
-	font-size: 13px;
-	font-weight: 700;
-	color: #666;
-}
 .post-title {
-	padding: 10px 16px 0px;
+	padding: 16px 16px 0px;
 	font-size: 20px;
 	font-weight: 900;
 }
@@ -510,6 +504,12 @@ a.post-image:hover {
 	text-decoration: none;
 }
 .post-date {
+	color: #aaa;
+	font-size: 13px;
+	font-weight: 700;
+	color: #666;
+}
+.post-date {
 	position: relative;
 	padding: 0 16px;
 	font-size: 13px;
@@ -518,11 +518,11 @@ a.post-image:hover {
 }
 .post-date:after {
 	content: "";
-	width: 200px;
+	width: 50%;
 	border: 1px dashed rgba(0,0,0,.2);
 	position: absolute;
 	top: 12px;
-	left: 104px;
+	right: 16px;
 }
 .post-excerpt {
 	padding: 10px 16px;
@@ -661,7 +661,7 @@ a.post-image:hover {
 	background-color: #D6D8DA;
 	position: absolute;
 	left: 9px;
-	bottom: 25px;
+	bottom: 26px;
 }
 .post-category li a {
 	padding-left: 10px;
@@ -677,6 +677,9 @@ a.post-image:hover {
   to {
     stroke-dashoffset: 0;
   }
+}
+.tag-cloud .tag a {
+	background-color: rgba(50,50,50,.1);
 }
 @media (max-width: 980px) {
 	.circle-svg,
