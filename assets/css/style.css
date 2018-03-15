@@ -467,7 +467,12 @@ p {
 .flex-item {
 	position: relative;
 	break-inside: avoid;
-	padding: 10px;
+	padding: 16px 16px 0 0;
+}
+@media (max-width: 980px) {
+	.flex-item {
+		padding: 16px;
+	}
 }
 @media (max-width: 620px) {
 	.flex-items {
@@ -475,12 +480,16 @@ p {
 	}
 	.flex-item {
 		max-width: 100%;
-		top: -45px;
+		top: -40px;
 	}
 }
 .post-card {
 	background-color: #f8f8f8;
 	padding-bottom: 10px;
+}
+.post-card:hover {
+	background: rgba(100,100,100,.1);
+	transition: .3s ease;
 }
 .post-image {
 	display: block;
@@ -598,11 +607,12 @@ a.post-image:hover {
 .widget-area {
 	float: left;
 	width: 30%;
-	padding: 10px;
+	padding: 16px;
 }
 .widget-area .inner {
-	background: #f8f8f8;
+	width: 262px;
 	padding: 16px;
+	background: #f8f8f8;
 }
 @media (max-width: 980px) {
 	.post-area {
@@ -680,6 +690,7 @@ a.post-image:hover {
 }
 .tag-cloud .tag a:hover {
 	background-color: rgba(50,50,50,.1);
+	transition: 0.5s ease;
 }
 @media (max-width: 980px) {
 	.circle-svg,

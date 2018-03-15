@@ -31,19 +31,28 @@
 	function requestTick() {
 		if (!ticking) {
 			requestAnimationFrame(applyOpacity);
+			requestAnimationFrame(fixSidebar);
 			ticking = true;
 		}
 	}
 
 	function applyOpacity() {
 		opacity = pageYOffset/animateHeight;
-		$mask.css("opacity", opacity);
-		if (opacity >= 1) {
-			$topbar.addClass("topbar-shadow");
-		} else {
+		if (opacity <= 1) {
+			$mask.css("opacity", opacity);
 			$topbar.removeClass("topbar-shadow");
+		} else {
+			$topbar.addClass("topbar-shadow");
 		}
 		ticking = false;
+	}
+
+	function fixSidebar() {
+		if (pageYOffset > 280) {
+			$sidebar.css('position', 'fixed').css('top', '50px');
+		} else {
+			$sidebar.css('position', 'static');
+		}
 	}
 })();
 
@@ -119,3 +128,5 @@
 		}
 	})
 })();
+
+
