@@ -838,6 +838,14 @@ a.post-image:hover {
 	border-top-left-radius: 4px;
 	border-top-right-radius: 4px;
 }
+highlight[data-lang]:after {
+	content: "";
+	position: absolute;
+	top: 10px;
+	left: 20px;
+	background: url(http://owlzone.org/assets/img/code.svg);
+	/* background-color: #1863a1; */
+}
 
 code:not([data-lang]) {
 	background: #ccc;
