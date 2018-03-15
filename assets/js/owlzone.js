@@ -50,7 +50,7 @@
 
 	function fixSidebar() {
 		if ( pageYOffset > 280 && !$sidebar.hasClass('fixed') ) {
-			$sidebar.addClass('fixed').css('top', '50px');
+			$sidebar.addClass('fixed').css('top', '50px').css('width', 'auto');
 		} else if ( pageYOffset < 280 && $sidebar.hasClass('fixed') ) {
 			$sidebar.removeClass('fixed');
 		}
@@ -102,14 +102,14 @@
 
 
 /* codeBanner.js */
-// (function codeBannerUtils() {
-// 	var el = document.getElementsByClassName('highlight');
-// 	var langList = [];
-// 	for(var i = 0; i < el.length; i++) {
-// 		langList.push(el[i].firstChild.firstChild.dataset.lang);
-// 		el[i].setAttribute('data-lang', langList[i]);
-// 	}
-// })();
+(function codeBannerUtils() {
+	var el = document.getElementsByClassName('highlight');
+	var langList = [];
+	for(var i = 0; i < el.length; i++) {
+		langList.push(el[i].firstChild.firstChild.dataset.lang);
+		el[i].setAttribute('data-lang', langList[i]);
+	}
+})();
 
 
 

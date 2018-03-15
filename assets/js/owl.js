@@ -33,8 +33,6 @@
 	}
 
 
-
-	// Initialize an Owl object without using the evil new.
 	var Owl = function (selector, context) {
 		return new Owl.fn.init(selector, context);
 	};
