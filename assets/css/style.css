@@ -508,7 +508,7 @@ blockquote p { display: inline; }
 }
 .post-card:hover .post-image {
 	filter: grayscale(1);
-	transition: .3s ease 2s;
+	transition: .3s ease-in 1s;
 }
 .post-title {
 	padding: 16px 16px 0px;
@@ -831,6 +831,7 @@ blockquote p { display: inline; }
 	width: 100%;
 	padding-left: 16px;
 	font-size: inherit;
+	font-weight: 900;
 	color: #1863a1;
 	background-color: rgba(50,50,50,.1);
 }
