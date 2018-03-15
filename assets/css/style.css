@@ -678,7 +678,7 @@ a.post-image:hover {
     stroke-dashoffset: 0;
   }
 }
-.tag-cloud .tag a {
+.tag-cloud .tag a:hover {
 	background-color: rgba(50,50,50,.1);
 }
 @media (max-width: 980px) {
