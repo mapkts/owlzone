@@ -3,10 +3,10 @@
 	var $header = $(".header"),
 		$topbar = $(".header-topbar"),
 		$mask = $(".opacity-mask"),
-		$window = $(window),
 		$sidebar = $('.widget-area'),
+		$window = $(window),
 		animateHeight = $header.rect().height - $topbar.rect().height,
-		opacity, timer, reset,
+		opacity, reset,
 		ticking = false,
 		resized = false;
 
@@ -49,9 +49,9 @@
 	}
 
 	function fixSidebar() {
-		if (pageYOffset > 280) {
+		if (pageYOffset > 280 && !$sidebar.hasClass('fixed')) {
 			$sidebar.addClass('fixed').css('top', '50px');
-		} else {
+		} else if ($sidebar.hasClass('fixed')) {
 			$sidebar.removeClass('fixed');
 		}
 	}
