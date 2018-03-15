@@ -31,6 +31,9 @@ description:        "The reign of a night owl."
 category_dir: category/
 tag_dir: tag/
 
+# Image
+header-image: assets/img/owl-and-rat.jpg
+
 # Excerpt
 excerpt_separator: "\n\n\n\n"
 

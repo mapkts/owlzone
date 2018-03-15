@@ -2,14 +2,14 @@
 <html>
 <head>
 {% include head.html %}
+<style type="text/css">
+	.has-custom-image {
+		background-image: url('{{ site.baseurl }}/{% if page.image %}{{ page.image }}{% else %}{{ site.header-image }}{% endif %}');
+	}
+</style>
 </head>
 <body>
-	<header class="header"  role="navigation">
-		{% if post.image %}
-		<div class="header-background has-custom-image" style="background-image: url('{{ page.image }}')"></div>
-		{% endif %}
-		{% include header.var.html %}
-	</header>
+{% include header.html %}
 
 	<main class="container">
 
