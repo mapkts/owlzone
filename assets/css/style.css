@@ -395,13 +395,13 @@ blockquote p { display: inline; }
 	right: 16px;
 }
 .footer .media-link {
-  display: inline-block;
-  height: 48px;
+        display: inline-block;
+        height: 48px;
 	padding: 0px 5px 0px;
 }
 .footer .media-link svg {
-  position: relative;
-  top: 18px;
+        position: relative;
+        top: 18px;
 	width: 16px;
 	height: 16px;
 }
@@ -470,8 +470,8 @@ blockquote p { display: inline; }
 	color: #222;
 }
 .flex-items {
-			column-count: 2;
-			column-gap: 0;
+	column-count: 2;
+	column-gap: 0;
 }
 .flex-item {
 	position: relative;
@@ -489,6 +489,7 @@ blockquote p { display: inline; }
 	}
 	.flex-item {
 		max-width: 100%;
+		top: -10px
 	}
 }
 .post-card {
