@@ -50,7 +50,7 @@
 
 	function fixSidebar() {
 		if ( pageYOffset > 280 && !$sidebar.hasClass('fixed') ) {
-			$sidebar.addClass('fixed').css('top', '50px').css('width', 'auto');
+			$sidebar.addClass('fixed').css('top', '50px');
 		} else if ( pageYOffset < 280 && $sidebar.hasClass('fixed') ) {
 			$sidebar.removeClass('fixed');
 		}

@@ -522,12 +522,6 @@ blockquote p { display: inline; }
 	text-decoration: none;
 }
 .post-date {
-	color: #aaa;
-	font-size: 13px;
-	font-weight: 700;
-	color: #666;
-}
-.post-date {
 	position: relative;
 	padding: 0 16px;
 	font-size: 13px;
@@ -536,10 +530,10 @@ blockquote p { display: inline; }
 }
 .post-date:after {
 	content: "";
-	width: 50%;
-	border: 1px dashed rgba(0,0,0,.2);
+	left: 111px;
+	border-top: 1px dashed;
 	position: absolute;
-	top: 12px;
+	top: 10px;
 	right: 16px;
 }
 .post-excerpt {
@@ -550,16 +544,16 @@ blockquote p { display: inline; }
 }
 .post-info {
 	padding: 0 16px;
-	height: 24px;
+	height: 20px;
 	line-height: 1;
 }
 .post-info .tag {
 	display: inline-block;
 	padding-right: 5px;
-	height: 24px;
+	height: 20px;
 }
 .post-info .tag svg {
-	width: 24px;
+	width: 20px;
 }
 .post-info .tag:hover,
 .post-info .tag:focus {
@@ -615,7 +609,6 @@ blockquote p { display: inline; }
 /* Widget area */
 .widget-area {
 	float: left;
-	width: 30%;
 	padding: 16px;
 	padding-bottom: 0;
 }
