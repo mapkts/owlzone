@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+{% include head.html %}
+</head>
+<body>
+{% include header.html %}
+
+  <main id="content" role="main">
+
+    <section class="post-content center">
+      <article>
+        <h1 class="post-title">{{ page.title }}</h1>
+        <div class="post-meta">
+          <time>{{ page.date | date_to_string }}</time>
+        </div>
+
+        {{ content }}
+
+      </article>
+    </section>
+
+  </main>
+
+{% include footer.html %}
+
+{% include scripts.html %}
+</body>
+</html>

@@ -1,0 +1,5 @@
+# Ignore docs files
+_site
+
+# Ignore editor folder
+.vscode

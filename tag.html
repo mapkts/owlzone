@@ -1,0 +1,32 @@
+---
+layout: basic
+title: Tags
+---
+
+<main class="container">
+
+  <section class="archive center">
+      <h1 class="post-title">{{ page.title }}</h1>
+        {% capture tags %}
+          {% for tag in site.tags %}
+            {{ tag[0] }}
+          {% endfor %}
+        {% endcapture %}
+        {% assign sortedtags = tags | split:' ' | sort %}
+
+      <ul  class="archive-list">
+        {% for tag in sortedtags %}
+          <h2 id="{{ tag | downcase }}">{{ tag }}</h2>
+          {% for post in site.tags[tag] %}
+            <li>
+                <time>
+                {{ post.date | date:"%F" }}
+                </time>
+                <a class="title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            </li>
+          {% endfor %}
+        {% endfor %}
+      </ul>
+  </section>
+
+</main>
