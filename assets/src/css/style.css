@@ -16,12 +16,13 @@ footer,header,hgroup,menu,nav,section {
 /*
  * Hacks
  */
-@supports (-webkit-overflow-scrolling: touch) {
+/* @supports (-webkit-overflow-scrolling: touch) {
   /* CSS specific to iOS devices */
   .opacity-overlay {
     cursor: pointer;
   }
-}
+} */
+
 
 
 /*
