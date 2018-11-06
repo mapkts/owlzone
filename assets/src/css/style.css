@@ -114,6 +114,9 @@ blockquote p { display: inline; }
 .hidden {
   display: none;
 }
+.no-scroll {
+  overflow: hidden;
+}
 
 /*
  * Header

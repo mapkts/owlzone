@@ -62,9 +62,11 @@
   var $item = $("#nav-main")
     , $icon = $("#nav-icon")
     , $overlay = $('.opacity-overlay')
+    , $body = $('body');
 
   $icon.on("click", function (e) {
       $item.toggleClass("nav-dropdown");
+      $body.toggleClass("no-scroll");
   });
 
   document.addEventListener("click", function (e) {
