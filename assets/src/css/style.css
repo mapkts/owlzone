@@ -16,12 +16,12 @@ footer,header,hgroup,menu,nav,section {
 /*
  * Hacks
  */
-/* @supports (-webkit-overflow-scrolling: touch) {
+@supports (-webkit-overflow-scrolling: touch) {
   /* CSS specific to iOS devices */
   .opacity-overlay {
     cursor: pointer;
   }
-} */
+}
 
 
 
@@ -29,6 +29,7 @@ footer,header,hgroup,menu,nav,section {
  * Base
  */
 html, body {
+  position: relative;
   height: 100%;
   min-height: 100%;
 }
