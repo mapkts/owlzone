@@ -74,6 +74,7 @@
 
       if (!isClickInside) {
           $item.removeClass("nav-dropdown");
+          $body.removeClass("no-scroll");
           $overlay.removeClass("overlay-display").removeClass("overlay-finale");
       }
   });
