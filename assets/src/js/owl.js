@@ -24,7 +24,7 @@
 
     function isFunction (obj) { return type(obj) === "function" }
     function isWindow (obj) { return obj != null && obj === obj.window }
-    function isArray (obj) { return Array.isArray(obj) || type(obj) === "array" }
+    function isArray (obj) { type(obj) === "array" }
     function isPlainObject (obj) {
         return toString.call(obj) === "[object Object]" && !isWindow(obj) && getProto(obj) === Object.prototype;
     }

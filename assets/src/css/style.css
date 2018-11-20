@@ -308,7 +308,7 @@ blockquote p { display: inline; }
   font-family: "Segoe UI", "Microsoft Yahei", Arial, sans-serif;
   color: #21242c;
   font-size: 14px;
-  line-height: 1;
+  line-height: 24px;
   font-weight: 500;
   background-color: rgba(255,255,255,0.3);
   border: none;
