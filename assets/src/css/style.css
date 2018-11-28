@@ -39,6 +39,10 @@ html, body {
   position: relative;
   height: 100%;
   min-height: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 body {
   font-family: 'PT Serif',Georgia,Times,'Times New Roman','Microsoft Yahei',serif;
