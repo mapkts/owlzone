@@ -3,6 +3,7 @@
  */
 @font-face {
   font-family: 'Playfair Display';
+  font-display: fallback;
   font-style: normal;
   font-weight: 900;
   src: local('Playfair Display Black'), local('PlayfairDisplay-Black'), url(https://owlzone.org/assets/fonts/nuFlD-vYSZviVYUb_rj3ij__anPXBb__lW4e5g.woff2) format('woff2');
