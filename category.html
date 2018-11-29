@@ -7,9 +7,10 @@ title: Category
 
   <section class="archive center">
       <h1 class="post-title">{{ page.title }}</h1>
-      <ul  class="archive-list">
+      <div  class="archive-list">
       {% for category in site.categories %}
         <h2 id="{{category | first | downcase}}">{{category | first}}</h2>
+        <ul>
         {% for posts in category  %}
         {% for post in posts %}
         {% if post.url %}
@@ -20,8 +21,9 @@ title: Category
         {% endif %}
         {% endfor %}
         {% endfor %}
+        </ul>
       {% endfor %}
-      </ul>
+      </div>
   </section>
 
 </main>

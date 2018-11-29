@@ -7,16 +7,18 @@ title: Archives
 
   <section class="archive center">
       <h1 class="post-title">{{ page.title }}</h1>
-      <ul  class="archive-list">
+      <div  class="archive-list">
         {% for post in site.posts %}
 
             {% unless post.next %}
               <h2>{{ post.date | date: '%Y' }}</h2>
+              <ul>
             {% else %}
               {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
               {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
               {% if year != nyear %}
                 <h2>{{ post.date | date: '%Y' }}</h2>
+                <ul>
               {% endif %}
             {% endunless %}
 
@@ -25,8 +27,18 @@ title: Archives
               <time>{{ post.date | date:"%F" }}</time>
             </li>
 
+            {% unless post.next %}
+              </ul>
+            {% else %}
+              {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+              {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+              {% if year != nyear %}
+              </ul>
+              {% endif %}
+            {% endunless %}
+
         {% endfor %}
-      </ul>
+          </div>
   </section>
 
 </main>
