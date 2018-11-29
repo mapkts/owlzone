@@ -500,7 +500,7 @@ blockquote p { display: inline; }
   background-color: #fff;
   padding-bottom: 10px;
   border-radius: 4px;
-  box-shadow: 4px 4px 30px rgba(50,50,50,.06), 1px 3px 8px rgba(50,50,50,.03);
+  box-shadow: 4px 2px 30px rgba(50,50,50,.06), 1px 3px 8px rgba(50,50,50,.03);
   transition: all .3s;
 }
 .post-card:hover {
