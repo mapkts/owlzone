@@ -1,5 +1,5 @@
   <header id="header"  role="banner">
-    <div class="header-background hero-image" style="background-image: url('{{ site.baseurl }}/{% if page.image %}{{ page.image }}{% else %}{{ site.header-image }}{% endif %}')"></div>
+    <div class="header-background hero-image" style="{% if page.image %}background-image: url('{{ site.baseurl }}/{{ page.image }}'){% endif %}"></div>
     <div class="header-background opacity-mask"></div>
 
     <div class="header-topbar">
