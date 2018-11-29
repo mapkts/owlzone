@@ -17,8 +17,11 @@ title: Archives
               {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
               {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
               {% if year != nyear %}
+                {% capture hasYear %}
                 <h2>{{ post.date | date: '%Y' }}</h2>
                 <ul>
+                {% endcapture %}
+                {{ hasYear }}
               {% endif %}
             {% endunless %}
 
@@ -30,9 +33,7 @@ title: Archives
             {% unless post.next %}
               </ul>
             {% else %}
-              {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-              {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
-              {% if year != nyear %}
+              {% if hasYear %}
               </ul>
               {% endif %}
             {% endunless %}
