@@ -59,7 +59,7 @@ d.className -= " hide-logo";
 {% endhighlight %}
 
 
-'''JavaScript
+~~~ JavaScript
 function expand(s) {
 s.style.display = "none";
 var x = document.getElementById('nav-menu');
@@ -93,7 +93,7 @@ var d = document.getElementById('oz-logo');
 d.className += " show-logo";
 d.className -= " hide-logo";
 }
-'''
+~~~
 
 <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste ipsum, earum in saepe totam doloribus repudiandae eligendi modi minima numquam.</blockquote>
 <code>Lorem ipsum dolor sit amet.</code>

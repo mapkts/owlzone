@@ -158,12 +158,17 @@ blockquote p { display: inline; }
 }
 .hero-image {
   background-color: rgb(106,141,166); /* fallback Color */
-  background-image: url("{{ site.baseurl }}/assets/img/owl-and-rat.jpg");
   background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+.webp .hero-image {
+  background-image: url("/assets/img/owl-and-rat.webp");
+}
+.no-webp .hero-image {
+  background-image: url("/assets/img/owl-and-rat.jpg");
 }
 .opacity-mask {
   opacity: 0;
