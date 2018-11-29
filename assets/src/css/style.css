@@ -346,9 +346,9 @@ blockquote p { display: inline; }
 .search-field input:hover {
   color: #707070;
 }
-:-ms-input-placeholder {
-  color: #fff !important;
-  font-size: 14px;
+.search-field input::-ms-input-placeholder {
+  color: #fff;
+  font-weight: 600;
 }
 ::placeholder {
   color: #fff;
@@ -479,6 +479,7 @@ blockquote p { display: inline; }
 .flex-item {
   position: relative;
   break-inside: avoid;
+  page-break-inside: avoid;
   padding: 16px 16px 0 0;
 }
 @media (min-width: 620px) and (max-width: 980px) {
@@ -500,7 +501,6 @@ blockquote p { display: inline; }
   background-color: #fff;
   padding-bottom: 10px;
   border-radius: 4px;
-  box-shadow: 4px 2px 30px rgba(50,50,50,.06), 1px 3px 8px rgba(50,50,50,.03);
   transition: all .3s;
 }
 .post-card:hover {
