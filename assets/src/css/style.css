@@ -788,14 +788,11 @@ blockquote p { display: inline; }
 .archive-list li time {
   float: right;
   font-size: .85em;
-  font-weight: 500;
 }
 .archive-list .title {
   color: #666;
   font-size: 1em;
-  font-weight: 700;
   text-decoration: none;
-  transition: all 0.3s ease;
 }
 @media (min-width: 768px) {
   .archive-list li:hover {

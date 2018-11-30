@@ -1,10 +1,10 @@
 var version = '2.5.4';
 var urlsToCache = [
   '/',
-  '/assets/img/code.svg',
+  '/assets/js/scripts.min.js',
   '/assets/img/owl-and-rat.jpg',
   '/assets/img/owl-and-rat.webp',
-  '/assets/js/scripts.min.js',
+  '/assets/img/code.svg',
 ];
 var CACHE_NAME = 'owlzone-sw-cache::v' + version;
 
