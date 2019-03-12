@@ -30,8 +30,8 @@ title:              OwlZone
 description:        "The Reign of a Night Owl"
 
 # Url
-category_dir: category/
-tag_dir: tag/
+category_dir: categories/
+tag_dir: tags/
 
 # Image
 header-image: assets/img/owl-and-rat.jpg
