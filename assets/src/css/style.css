@@ -266,10 +266,10 @@ blockquote p { display: inline; }
 @media (max-width: 768px) {
   .nav-main {
     position: absolute;
+    top: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100vh;
     right: -100px;
     width: 100px;
     z-index: -1 !important;
@@ -400,7 +400,7 @@ blockquote p { display: inline; }
   background: rgba(50,50,50,.5);
   opacity: .5;
   display: block;
-  transition: opacity .5s .3s;
+  transition: opacity .3s .3s;
 }
 .overlay-finale {
     opacity: 1;
