@@ -1,6 +1,7 @@
-var version = '2.5.4';
+var version = '2.6.4';
 var urlsToCache = [
   '/',
+  '/font/',
   '/assets/js/scripts.min.js',
   '/assets/img/owl-and-rat.jpg',
   '/assets/img/owl-and-rat.webp',
