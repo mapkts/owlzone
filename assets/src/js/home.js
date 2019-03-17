@@ -18,15 +18,15 @@
         ticking = true;
       }
     }, window);
-  }
 
-  function fixSidebar() {
-    if (pageYOffset > 280 && !$.hasClass('fixed', sidebar)) {
-      $.pipe($.addClass('fixed'), $.css({
-        'top': '50px'
-      }))(sidebar);
-    } else if (pageYOffset < 280 && $.hasClass('fixed', sidebar)) {
-      $.removeClass('fixed', sidebar);
+    function fixSidebar() {
+      if (pageYOffset > 280 && !$.hasClass('fixed', sidebar)) {
+        $.pipe($.addClass('fixed'), $.css({
+          'top': '50px'
+        }))(sidebar);
+      } else if (pageYOffset < 280 && $.hasClass('fixed', sidebar)) {
+        $.removeClass('fixed', sidebar);
+      }
     }
   }
 
@@ -45,11 +45,11 @@
       $.removeClass('active', tabs);
       $.addClass('active', tab);
       if ($.hasClass('active', tabs[1])) {
-        tabCates.hide();
-        tabTags.show();
+        $.hide(tabCates);
+        $.show(tabTags);
       } else {
-        tabCates.show();
-        tabTags.hide();
+        $.show(tabCates);
+        $.hide(tabTags);
       }
     }
   }
