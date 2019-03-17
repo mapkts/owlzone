@@ -1,4 +1,4 @@
-var version = '2.7.0';
+var version = '2.7.1';
 var urlsToCache = [
   '/',
   '/assets/js/bundle.min.js',
