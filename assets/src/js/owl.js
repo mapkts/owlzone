@@ -680,7 +680,7 @@
     show: function (src) {
       $.css({
         display: ''
-      }, src)
+      }, src);
     },
 
     /**
@@ -692,7 +692,7 @@
     hide: function (src) {
       $.css({
         display: 'none'
-      }, src)
+      }, src);
     },
 
     /**

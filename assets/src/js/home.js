@@ -35,23 +35,19 @@
     var tabCates = $('.post-category');
     var tabTags = $('.post-tags');
 
-    tabs.forEach(function (el) {
-      $.on('click', function (el) {
-        switcher(el);
-      }, el);
+    tabs.forEach(function (tab) {
+      $.on('click', function switcher() {
+        $.removeClass('active', tabs);
+        $.addClass('active', tab);
+        if ($.hasClass('active', tabs[1])) {
+          $.hide(tabCates);
+          $.show(tabTags);
+        } else {
+          $.show(tabCates);
+          $.hide(tabTags);
+        }
+      }, tab);
     })
-
-    function switcher(tab) {
-      $.removeClass('active', tabs);
-      $.addClass('active', tab);
-      if ($.hasClass('active', tabs[1])) {
-        $.hide(tabCates);
-        $.show(tabTags);
-      } else {
-        $.show(tabCates);
-        $.hide(tabTags);
-      }
-    }
   }
 
   function appendBorderTopColor() {
