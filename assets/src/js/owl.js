@@ -293,9 +293,9 @@
 
     /**
      * Performs different actions for defferent parameter pairs:
-     * 1. (selector, Node): Get the first descendant that matches the selector
+     * 1. (selector, node): Get the descendants that matches the selector
      * 2. (selector, nodeList): Get the descendants of each element in list that match the selector
-     * 3. (Node/nodeList, Node/nodeList): Goto the node or nodeList that passed into the first parameter
+     * 3. (node/nodeList, Any): Goto the node or nodeList that passed into the first parameter
      * 4. (number, nodeList): Goto nodeList[number]
      *
      * **Note:** This function is automatically curried
@@ -306,19 +306,18 @@
     find: curry2(function (selector, src) {
       var isString = typeof selector === 'string';
 
-      if (src.length) {
-        if (isString) {
+      if (isString) {
+        if (src.length) {
           return concat.apply([], map(function (el) {
             return slice.call($.all(selector, el));
-          }, src));
-        } else if (typeof selector === 'number') {
-          return src[selector];
-        } else if (isNode(selector) || isArrayLike(selector)) {
-          return selector;
+        }, src));
+        } else {
+          return $$(selector, src);
         }
-      } else if (isNode(src)) {
-        if (isString) return $(selector, src);
-        else if (isNode(selector) || isArrayLike(selector)) return selector;
+      } else if (typeof selector === 'number') {
+        return src[selector];
+      } else if (isNode(selector) || isArrayLike(selector)) {
+        return selector;
       }
     }),
 

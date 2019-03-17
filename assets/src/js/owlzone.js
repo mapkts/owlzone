@@ -180,7 +180,7 @@
     var titles = $$('.has-top-border');
 
     titles.forEach(function (el, i) {
-      $.css({'border-top-color': colors[i]});
+      $.css({'border-top-color': colors[i]}, el);
     });
   }
 })();
