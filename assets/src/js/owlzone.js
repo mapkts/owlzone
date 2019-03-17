@@ -109,7 +109,7 @@
 
     // Tab switching
     function switchTab() {
-      var tabs = $$('.widget-area');
+      var tabs = $$('.widget-tab');
       var tabCates = $('.post-category');
       var tabTags = $('.post-tags');
 
