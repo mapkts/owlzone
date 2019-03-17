@@ -1,4 +1,4 @@
-var version = '2.6.7';
+var version = '2.6.8';
 var urlsToCache = [
   '/',
   '/assets/js/scripts.min.js',
