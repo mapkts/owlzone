@@ -119,7 +119,7 @@
 
       function switcher(tab) {
         $.removeClass('active', tabs);
-        tab.addClass('active', tab);
+        $.addClass('active', tab);
         if ($.hasClass('active', tabs[1])) {
           tabCates.hide();
           tabTags.show();
@@ -144,16 +144,6 @@
     ticking = false;
   }
 
-  function fixSidebar() {
-    if (pageYOffset > 280 && !$.hasClass('fixed', sidebar)) {
-      $.pipe($.addClass('fixed'), $.css({
-        'top': '50px'
-      }))(sidebar);
-    } else if (pageYOffset < 280 && $.hasClass('fixed', sidebar)) {
-      $.removeClass('fixed', sidebar);
-    }
-  }
-
   function setCodeBanners() {
     var normalizedLanguages = {
       html: 'HTML',
@@ -163,7 +153,8 @@
     };
 
     highlights.forEach(function (el) {
-      el.setAttribute('data-lang', normalizeLang(el.fisrtChild.firstChild.dataset.lang));
+      var lang = normalizeLang(el.firstChild.firstChild.dataset.lang);
+      $.attr({'data-lang': lang}, el);
     })
 
     function normalizeLang(src) {
@@ -176,11 +167,21 @@
 
   function appendBorderTopColor() {
     // Ten colors would be sufficient enough because we only display ten posts in home page
-    var colors = ["#1abc9c","#2ecc71","#9b59b6","#3498db","#e74c3c","#e67e22", "#7f8c8d", "#ffbe76", "#f6e58d", "#95afc0"];
+    var colors = ["#95afc0", "#2ecc71","#9b59b6","#3498db","#e74c3c","#e67e22", "#7f8c8d", "#ffbe76", "#f6e58d", "#1abc9c"];
     var titles = $$('.has-top-border');
 
     titles.forEach(function (el, i) {
       $.css({'border-top-color': colors[i]}, el);
     });
+  }
+
+  function fixSidebar() {
+    if (pageYOffset > 280 && !$.hasClass('fixed', sidebar)) {
+      $.pipe($.addClass('fixed'), $.css({
+        'top': '50px'
+      }))(sidebar);
+    } else if (pageYOffset < 280 && $.hasClass('fixed', sidebar)) {
+      $.removeClass('fixed', sidebar);
+    }
   }
 })();
