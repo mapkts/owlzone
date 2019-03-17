@@ -117,7 +117,7 @@
   }
 
   function extend() {
-    var options, src, clone;
+    var options, src, clone, copy;
     var target = arguments[0] || {};
     var source = {};
     var i = 0;
