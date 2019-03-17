@@ -1,7 +1,8 @@
-var version = '2.6.13';
+var version = '2.7.0';
 var urlsToCache = [
   '/',
-  '/assets/js/scripts.min.js',
+  '/assets/js/bundle.min.js',
+  '/assets/js/home.min.js',
   '/assets/img/code.svg',
   '/assets/img/owl-and-rat.jpg',
   '/assets/img/owl-and-rat.webp',

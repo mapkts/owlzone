@@ -2,7 +2,6 @@
   var header = $('#header');
   var topbar = $('.header-topbar');
   var mask = $('.opacity-mask');
-  var sidebar = $('.widget-area');
   var navMain = $('#nav-main');
   var navIcon = $('#nav-icon');
   var overlay = $('.opacity-overlay');
@@ -19,14 +18,12 @@
 
   applyOpacity();
   setCodeBanners();
-  appendBorderTopColor();
 
   $.pipe(
     // Apply opacity when window scrolled and resized, and fix sidebar if pageYOffset > 280
     $.on('scroll', function () {
       if (!ticking) {
         requestAnimationFrame(applyOpacity);
-        requestAnimationFrame(fixSidebar);
         ticking = true;
       }
     }),
@@ -104,31 +101,7 @@
       ].forEach(function (arr) {
         $.removeClass.apply(null, arr);
       })
-    }),
-
-
-    // Tab switching
-    function switchTab() {
-      var tabs = $$('.widget-tab');
-      var tabCates = $('.post-category');
-      var tabTags = $('.post-tags');
-
-      tabs.forEach(function (el) {
-        $.on('click', function (el) { switcher(el); }, el);
-      })
-
-      function switcher(tab) {
-        $.removeClass('active', tabs);
-        $.addClass('active', tab);
-        if ($.hasClass('active', tabs[1])) {
-          tabCates.hide();
-          tabTags.show();
-        } else {
-          tabCates.show();
-          tabTags.hide();
-        }
-      }
-    }
+    })
   )(window);
 
   function applyOpacity() {
@@ -162,26 +135,6 @@
         return normalizedLanguages[src];
       }
       return src;
-    }
-  }
-
-  function appendBorderTopColor() {
-    // Ten colors would be sufficient enough because we only display ten posts in home page
-    var colors = ["#95afc0", "#2ecc71","#9b59b6","#3498db","#e74c3c","#e67e22", "#7f8c8d", "#ffbe76", "#f6e58d", "#1abc9c"];
-    var titles = $$('.has-top-border');
-
-    titles.forEach(function (el, i) {
-      $.css({'border-top-color': colors[i]}, el);
-    });
-  }
-
-  function fixSidebar() {
-    if (pageYOffset > 280 && !$.hasClass('fixed', sidebar)) {
-      $.pipe($.addClass('fixed'), $.css({
-        'top': '50px'
-      }))(sidebar);
-    } else if (pageYOffset < 280 && $.hasClass('fixed', sidebar)) {
-      $.removeClass('fixed', sidebar);
     }
   }
 })();

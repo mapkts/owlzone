@@ -758,7 +758,7 @@
 
       if (isElement(elem)) {
         ret = elem.classList.contains(str);
-      } else if (elem.length) {
+      } else if (elem && elem.length) {
         i = -1;
         ret = true;
         len = elem.length;
