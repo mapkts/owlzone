@@ -1,7 +1,6 @@
 (function () {
   'use strict';
 
-
   onScroll();
   tabSwitcher();
   appendBorderTopColor();
@@ -14,7 +13,10 @@
 
     $.on('scroll', function () {
       if (!ticking) {
-        requestAnimationFrame(fixSidebar);
+        requestAnimationFrame(function () {
+          fixSidebar();
+          ticking = false;
+        });
         ticking = true;
       }
     }, window);
