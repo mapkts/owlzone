@@ -1,5 +1,5 @@
 let isWebpSupported
-const version = '2.8.8';
+const version = '2.8.9';
 const CACHE_NAME = 'owlzone-sw-cache::v' + version;
 const urlsToCache = [
   '/',
@@ -21,11 +21,12 @@ async function supportsWebp() {
 self.addEventListener('install', function (event) {
   event.waitUntil(
     caches.open(CACHE_NAME).then(function (cache) {
-      supportsWebp().then(function (bool) {
+      return supportsWebp().then(function (bool) {
         isWebpSupported = bool;
         urlsToCache.push('/assets/img/owl-and-rat' + (isWebpSupported ? '.webp' : '.jpg'));
-      })
-      return cache.addAll(urlsToCache);
+      }).then(function () {
+        cache.addAll(urlsToCache);
+      });
     }).then(function () {
       return self.skipWaiting();
     })
@@ -58,7 +59,12 @@ self.addEventListener('fetch', function (event) {
 
   event.respondWith(
     caches.match(event.request).then(function (response) {
-      return response || fetch(event.request);
+      if (response) return response;
+      if (isWebpSupported && /\.jpg$|.png$/.test(event.request.url)) {
+        const url = event.request.url.substr(0, req.url.lastIndexOf(".")) + ".webp";
+        return fetch(url);
+      }
+      return fetch(event.request)
     })
   );
 });
