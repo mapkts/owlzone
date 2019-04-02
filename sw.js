@@ -22,6 +22,7 @@ self.addEventListener('install', function (event) {
   event.waitUntil(
     caches.open(CACHE_NAME).then(function (cache) {
       supportsWebp().then(bool => isWebpSupported = bool);
+      console.log(supportsWebp(), isWebpSupported)
       urlsToCache.push('/assets/img/owl-and-rat' + (isWebpSupported ? '.webp' : '.jpg'));
       return cache.addAll(urlsToCache);
     }).then(function () {
