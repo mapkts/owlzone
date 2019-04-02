@@ -1,5 +1,5 @@
 let isWebpSupported
-const version = '2.8.10';
+const version = '2.8.11';
 const CACHE_NAME = 'owlzone-sw-cache::v' + version;
 const urlsToCache = [
   '/',
@@ -59,12 +59,7 @@ self.addEventListener('fetch', function (event) {
 
   event.respondWith(
     caches.match(event.request).then(function (response) {
-      if (response) return response;
-      if (isWebpSupported && /\.jpg$|.png$/.test(event.request.url)) {
-        const url = event.request.url;
-        return fetch(url.substr(0, url.lastIndexOf(".")) + ".webp");
-      }
-      return fetch(event.request)
+      return response || fetch(event.request);
     })
   );
 });
