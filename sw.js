@@ -1,5 +1,5 @@
 let isWebpSupported
-const version = '2.8.0';
+const version = '2.8.1';
 const CACHE_NAME = 'owlzone-sw-cache::v' + version;
 const urlsToCache = [
   '/',
@@ -22,7 +22,7 @@ self.addEventListener('install', function (event) {
   event.waitUntil(
     caches.open(CACHE_NAME).then(function (cache) {
       supportsWebp().then(bool => isWebpSupported = bool);
-      urlsToCache.push('/assets/img/owl-and-rat' + isWebpSupported ? '.webp' : '.jpg');
+      urlsToCache.push('/assets/img/owl-and-rat' + (isWebpSupported ? '.webp' : '.jpg'));
       return cache.addAll(urlsToCache);
     }).then(function () {
       // Force the SW to transition from installing to active state
