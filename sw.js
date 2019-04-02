@@ -20,9 +20,9 @@ async function supportsWebp() {
 
 self.addEventListener('install', function (event) {
   event.waitUntil(async function () {
-    isWebpSupported = await supportsWebp();
-    urlsToCache.push('/assets/img/owl-and-rat' + isWebpSupported ? '.webp' : '.jpg');
-    return caches.open(CACHE_NAME).then(function (cache) {
+    // isWebpSupported = await supportsWebp();
+    // urlsToCache.push('/assets/img/owl-and-rat' + isWebpSupported ? '.webp' : '.jpg');
+    caches.open(CACHE_NAME).then(function (cache) {
       return cache.addAll(urlsToCache);
     }).then(function () {
       // Force the SW to transition from installing to active state
