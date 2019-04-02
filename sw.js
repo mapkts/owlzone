@@ -22,7 +22,7 @@ self.addEventListener('install', function (event) {
   event.waitUntil(async function () {
     isWebpSupported = await supportsWebp();
     urlsToCache.push('/assets/img/owl-and-rat' + isWebpSupported ? '.webp' : '.jpg');
-    caches.open(CACHE_NAME).then(function (cache) {
+    return caches.open(CACHE_NAME).then(function (cache) {
       return cache.addAll(urlsToCache);
     }).then(function () {
       // Force the SW to transition from installing to active state
@@ -57,16 +57,7 @@ self.addEventListener('fetch', function (event) {
 
   event.respondWith(
     caches.match(event.request).then(function (response) {
-      if (response) {
-        return response;
-      } else {
-        if (isWebpSupported && /\.jpg$|.png$/.test(event.request.url)) {
-          var url = event.request.url.substr(0, req.url.lastIndexOf(".")) + ".webp";
-          return fetch(url);
-        }
-
-        return fetch(event.request);
-      }
+      return response || fetch(event.request);
     })
   );
 });
