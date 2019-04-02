@@ -1,5 +1,5 @@
 let isWebpSupported
-const version = '2.7.7';
+const version = '2.7.8';
 const CACHE_NAME = 'owlzone-sw-cache::v' + version;
 const urlsToCache = [
   '/',
