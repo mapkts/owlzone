@@ -1,36 +1,34 @@
-var version = '2.7.5';
-var CACHE_NAME = 'owlzone-sw-cache::v' + version;
-var urlsToCache = [
+let isWebpSupported
+const version = '2.7.6';
+const CACHE_NAME = 'owlzone-sw-cache::v' + version;
+const urlsToCache = [
   '/',
   '/assets/img/code.svg',
   '/assets/js/home.min.js',
   '/assets/js/bundle.min.js',
   '/assets/font/nuFlD-vYSZviVYUb_rj3ij__anPXBb__lW4e5g.woff2',
 ];
-var supportsWebp = (function () {
-  var ret;
-  var img = new Image();
-  img.src = "data:image/webp;base64,UklGRiIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEADsD+JaQAA3AAAAAA";
-  img.onload = function () {
-    ret = (img.width > 0) && (img.height > 0);
-  };
-  img.onerror = function () {
-    ret = false;
-  };
-  return ret;
-})();
+
+async function supportsWebp() {
+  if (!self.createImageBitmap) return false;
+
+  const webpData = 'data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=';
+  const blob = await fetch(webpData).then(r => r.blob());
+  return createImageBitmap(blob).then(() => true, () => false);
+}
 
 
 self.addEventListener('install', function (event) {
-  event.waitUntil(
+  event.waitUntil(async function () {
+    isWebpSupported = await supportsWebp();
+    urlsToCache.push('/assets/img/owl-and-rat' + isWebpSupported ? '.webp' : '.jpg');
     caches.open(CACHE_NAME).then(function (cache) {
-      urlsToCache.push('/assets/img/owl-and-rat' + supportsWebp ? '.webp' : '.jpg');
       return cache.addAll(urlsToCache);
     }).then(function () {
       // Force the SW to transition from installing to active state
       return self.skipWaiting();
     })
-  );
+  });
 });
 
 self.addEventListener('activate', function (event) {
@@ -62,7 +60,7 @@ self.addEventListener('fetch', function (event) {
       if (response) {
         return response;
       } else {
-        if (supportsWebp && /\.jpg$|.png$/.test(event.request.url)) {
+        if (isWebpSupported && /\.jpg$|.png$/.test(event.request.url)) {
           var url = event.request.url.substr(0, req.url.lastIndexOf(".")) + ".webp";
           return fetch(url);
         }
