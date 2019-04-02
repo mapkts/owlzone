@@ -21,7 +21,7 @@ async function supportsWebp() {
 self.addEventListener('install', function (event) {
   event.waitUntil(
     caches.open(CACHE_NAME).then(function (cache) {
-      supportsWebp().then(bool => { return isWebpSupported = bool });
+      supportsWebp().then(bool => isWebpSupported = bool, null);
       console.log(supportsWebp(), isWebpSupported)
       urlsToCache.push('/assets/img/owl-and-rat' + (isWebpSupported ? '.webp' : '.jpg'));
       return cache.addAll(urlsToCache);
