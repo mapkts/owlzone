@@ -38,7 +38,7 @@ self.addEventListener('activate', function (event) {
         cacheNames.filter(function (cacheName) {
           return cacheName.startsWith('owlzone-') && cacheName !== CACHE_NAME;
         }).map(function (cacheName) {
-          return caches.devare(cacheName);
+          return caches.delete(cacheName);
         })
       );
     })
