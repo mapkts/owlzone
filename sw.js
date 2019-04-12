@@ -1,14 +1,15 @@
-let isWebpSupported
 const version = '2.8.11';
 const CACHE_NAME = 'owlzone-sw-cache::v' + version;
 const urlsToCache = [
   '/',
+  '/favicon.ico',
   '/assets/img/code.svg',
   '/assets/js/home.min.js',
   '/assets/js/bundle.min.js',
   '/assets/font/nuFlD-vYSZviVYUb_rj3ij__anPXBb__lW4e5g.woff2',
 ];
 
+let isWebpSupported
 async function supportsWebp() {
   if (!self.createImageBitmap) return false;
 
