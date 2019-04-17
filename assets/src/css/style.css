@@ -537,7 +537,7 @@ blockquote p { display: inline; }
 }
 .post-date:after {
   content: "";
-  left: 111px;
+  left: 100px;
   border-top: 1px dashed;
   position: absolute;
   top: 10px;
