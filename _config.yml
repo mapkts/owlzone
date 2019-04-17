@@ -16,7 +16,7 @@ encoding:       UTF-8
 exclude:
   - .git/
   - .github/
-  - assets/src/
+  - src/
   - node_modules/
   - Gemfile
   - README.md
@@ -26,8 +26,8 @@ plugins:
   - jekyll-paginate
 
 # Social
-title:              OwlZone
-description:        "The Reign of a Night Owl"
+title:           OwlZone
+description:     "The Reign of a Night Owl"
 
 # Url
 category_dir: categories/
@@ -38,6 +38,3 @@ header-image: assets/img/owl-and-rat.jpg
 
 # Excerpt
 excerpt_separator: "\n\n\n\n"
-
-# Paginate
-paginate: 5
