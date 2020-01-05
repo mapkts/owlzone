@@ -11,7 +11,7 @@ permalink:      pretty
 # Server
 source:         "."
 baseurl:        ""
-url:            "https://owlzone.org"
+url:            "https://mapkts.com"
 encoding:       UTF-8
 exclude:
   - .git/
