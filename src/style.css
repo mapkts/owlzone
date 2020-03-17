@@ -32,6 +32,7 @@ html, body {
   position: relative;
   height: 100%;
   min-height: 100%;
+  font-size: 14px;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
@@ -511,7 +512,7 @@ code {
 }
 .post-title {
   padding: 10px 16px 0px;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: normal;
   letter-spacing: .015em;
 }
