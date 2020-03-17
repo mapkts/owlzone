@@ -1,4 +1,4 @@
-const version = '2.8.11';
+const version = '2.9.0';
 const CACHE_NAME = 'owlzone-sw-cache::v' + version;
 const urlsToCache = [
   '/',
@@ -6,7 +6,6 @@ const urlsToCache = [
   '/assets/img/code.svg',
   '/assets/js/home.min.js',
   '/assets/js/bundle.min.js',
-  '/assets/font/nuFlD-vYSZviVYUb_rj3ij__anPXBb__lW4e5g.woff2',
 ];
 
 let isWebpSupported

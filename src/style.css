@@ -1,14 +1,6 @@
 /*
  * Setup
  */
-@font-face {
-  font-family: 'Playfair Display';
-  font-display: fallback;
-  font-style: normal;
-  font-weight: 900;
-  src: local('Playfair Display Black'), local('PlayfairDisplay-Black'), url(https://mapkts.com/assets/font/nuFlD-vYSZviVYUb_rj3ij__anPXBb__lW4e5g.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
 * {
   margin: 0;
   padding: 0;
@@ -46,7 +38,7 @@ html, body {
   -moz-osx-font-smoothing: grayscale;
 }
 body {
-  font-family: 'PT Serif',Georgia,Times,'Times New Roman','Microsoft Yahei',serif;
+  font-family: Menlo,Monaco,"Droid Sans","Lucida Console","Liberation Mono","DejaVu Sans Mono","Bitstream Vera Sans Mono","Courier New",monospace,serif;
   line-height: 1.5;
   background: #e8e8e8;
 }
@@ -77,7 +69,6 @@ a:active {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 900;
-  font-family: 'Playfair Display', serif;
 }
 h1 { font-size: 2em }
 h2 { font-size: 1.5em }
@@ -107,6 +98,10 @@ blockquote {
   border-left: 5px solid #aaa;
 }
 blockquote p { display: inline; }
+
+code {
+  font-family: Menlo,Monaco,"Droid Sans","Lucida Console","Liberation Mono","DejaVu Sans Mono","Bitstream Vera Sans Mono","Courier New",monospace,serif;
+}
 
 /*
  * Layout
@@ -322,7 +317,7 @@ blockquote p { display: inline; }
   width: 150px;
   height: 24px;
   padding: 2px 6px;
-  font-family: "Segoe UI", "Microsoft Yahei", Arial, sans-serif;
+  font-family: 'Segoe UI', Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: #21242c;
   font-size: 14px;
   line-height: 24px;
@@ -517,7 +512,7 @@ blockquote p { display: inline; }
 .post-title {
   padding: 10px 16px 0px;
   font-size: 20px;
-  font-weight: 900;
+  font-weight: normal;
   letter-spacing: .015em;
 }
 .has-top-border {
@@ -537,7 +532,7 @@ blockquote p { display: inline; }
 }
 .post-date:after {
   content: "";
-  left: 100px;
+  left: 115px;
   border-top: 1px dashed;
   position: absolute;
   top: 10px;
@@ -598,7 +593,6 @@ blockquote p { display: inline; }
   float: left;
   padding: 5px 0 1px 0;
   width: 50%;
-  font-family: 'Segoe UI',Roboto,'Open Sans','Helvetica Neue',sans-serif;
   font-size: 1em;
   font-weight: 700;
   text-align: center;
@@ -775,9 +769,6 @@ blockquote p { display: inline; }
   padding-bottom: 25px;
   color: #666;
 }
-.archive-list > * {
-  font-family: 'Segoe UI', Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
 .archive-list h2 {
   margin: 25px 0 0 -20px;
   border-bottom: 1px solid #ccc;
@@ -815,7 +806,7 @@ blockquote p { display: inline; }
   padding-left: 10px;
   padding-top: 20px;
   margin: 1em 0;
-  font-family: Consolas, Menlo, Monaco, "Lucida Console", "Courier New", monospace, serif;
+  font-family: Menlo,Monaco,"Droid Sans","Lucida Console","Liberation Mono","DejaVu Sans Mono","Bitstream Vera Sans Mono","Courier New",monospace,serif;
   font-size: 14px;
   border: 1px solid rgba(0,0,0,.2);
   border-radius: 4px;
@@ -853,7 +844,7 @@ blockquote p { display: inline; }
 }
 .highlight[data-lang] pre {
   overflow: auto;
-  font-size: 13px;
+  font-size: 12px;
 }
 code:not([data-lang]) {
   background: #ccc;
