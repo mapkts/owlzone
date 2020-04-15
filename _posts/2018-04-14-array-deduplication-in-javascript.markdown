@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Remove Duplicates From Array
+title: Array Deduplication in JavaScript
 date: April 14, 2018
 tags: JavaScript
 categories: JavaScript
-image:
+image: images/array.jpg
 ---
 Removing duplicates from array in JavaScript is a common question, and many libraries has implemented a unqiue method to do this kinda job. But we might not need a library to do this because remove duplicates from array is not so hard a thing. In this post, you'll learn some elegant methods to remove duplicates in array.
 
