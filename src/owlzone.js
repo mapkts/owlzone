@@ -129,7 +129,7 @@
     };
 
     elems.forEach(function (el) {
-      el.forEach(function (cls) {
+      el.classList.forEach(function (cls) {
         var match = /language-(.+)/.exec(cls);
         if (match != null) {
           $.attr({'data-lang': languages[match[1]]}, el.firstChild);
