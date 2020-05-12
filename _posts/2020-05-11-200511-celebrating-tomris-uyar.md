@@ -9,7 +9,7 @@ image: images/200511-tomris-uyar.png
 
 Today’s Doodle, illustrated by Istanbul-based guest artist Merve Atılgan, celebrates the prolific Turkish short story writer and translator Tomris Uyar. A leading figure in 1970s Turkish literature, Uyar was known for her realist style that often focused on the authentic depiction of female characters and family dynamics. On this day in 1980 and 1987, Uyar was honored with one of Turkish literature's most esteemed awards for short stories, the Sait Faik Story Award.
 
-今天的Doodle，由驻伊斯坦布尔的客座艺术家Merve Atilgan绘制, 纪念土耳其多产的短篇小说作家兼翻译家Tomris Uyar。作为20世纪70年代土耳其文学的领军人物，Uyar以她侧重于真实地描写女性角色和家庭内部关系的的写实风格著称。在1980和1987年的今天，Uyar两次被授予Sait Faik故事奖 - 土耳其文学最受人尊敬的短篇小说奖之一。
+今天的Doodle，由驻伊斯坦布尔的客座艺术家Merve Atilgan绘制, 纪念土耳其多产的短篇小说作家兼翻译家Tomris Uyar。作为20世纪70年代土耳其文学的领军人物，Uyar以她侧重于真实地描写女性角色和家庭内部人际关系的的写实风格著称。在1980和1987年的今天，Uyar两次被授予Sait Faik故事奖 —— 土耳其文学最受人尊敬的短篇小说奖之一。
 
 Born in Istanbul on March 15, 1941, Uyar grew up attending American schools, and her access to English-language short fiction and Turkey’s contemporary literature served as a strong inspiration for the future writer.
 
@@ -25,7 +25,7 @@ As a writer, she devoted herself to short fiction with a bit of support from her
 
 Amongst her greatest influences was Turkish writer Sait Faik, known for narrating evocative human stories unconstrained by form or plot. Drawing from influences like Faik, Uyar’s work pushed the boundaries of the form, employing postmodern techniques in the exploration of the lives of ordinary people, particularly from a female perspective. Over the years, her writing progressed to a caliber that positioned her to receive the aforementioned Sait Faik Story Award twice, a prize created in honor of the writer that had such a profound impact on Uyar and her narratives.
 
-对她影响最大的是土耳其作家Sait Faik，他以写作不受形式和情节限制且令人回味的人类故事闻名。受到Faik等人的影响，Uyar的作品突破了形式的界限，她采用后现代的写作技巧探索普通百姓的生活，尤其是从女性的角度出发。随时间推移，写作能力的精进使她两次获得上述提到的Sait Faik故事奖 - 一个为纪念对Uyar和她的作品产生深远影响的作家Sait Faik而设立的奖项。
+对她影响最大的是土耳其作家Sait Faik，他以写作不受形式和情节限制且令人回味的人类故事闻名。受到Faik等人的影响，Uyar的作品突破了形式的界限，她采用后现代的写作技巧探索普通百姓的生活，尤其是从女性的角度出发。随时间推移，写作能力的精进使她两次获得上述提到的Sait Faik故事奖 —— 一个为纪念对Uyar和她的作品产生深远影响的作家Sait Faik而设立的奖项。
 
 In current times, Uyar’s writing has been published in over 60 languages and is enjoyed by readers around the world to this day.
 
@@ -36,7 +36,7 @@ Istanbul-based: 驻伊斯坦比尔的
 prolific writer: 多产的作家
 leading figure: 领军人物
 realist style: 写实风格
-family dynamics: 家庭内部关系
+family dynamics: 家庭关系
 contemporary literature: 当代文学
 avant-garde: 前卫的
 intricate: 错综复杂的

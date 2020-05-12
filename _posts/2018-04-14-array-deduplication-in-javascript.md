@@ -20,7 +20,7 @@ const uniq = Array.from[new Set(arr)]; // [1, '1']
 
 ES6 build-in [Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set) is actually an iterable object, so we can use spread operator to spread it out and collect it in array. It works fine on primitives and objects(object, array, function, ...etc), but this doesn't works:
 
-{% highlight javascript %}
+```js
 // Because object is referenced by identifier, this doesn't works:
 const arr = [{}, {}, [], []];
 const uniq = [...new Set(arr)]; // [{}, {}, [], []]
@@ -30,7 +30,7 @@ const obj = {};
 const fn = () => {};
 const arr = [obj, obj, fn, fn];
 const uniq = [...new Set(arr)]; // [obj, fn]
-{% endhighlight %}
+```
 
 ## Using ES5 Array methods
 
