@@ -9,7 +9,7 @@ image: images/200327-the-mariniere.gif
 
 Today’s animated Doodle celebrates the iconic French blue-and-white-striped shirt, the marinière (French for “sailor shirt”). On this day in 1858, the French Navy decreed this versatile undergarment part of the official uniform of its sailors, marking the genesis of the top’s storied journey into closets around the world. 
 
-今天的动画涂鸦致敬标志性的法国条纹衬衫marinière（法语意为“海军衫”）。1858年的这一天，法国海军将这一 多用途内衣定为其海军正式制服的一种，标志着这一上衣开始了其进入世界橱窗的传奇之旅。
+今天的动画涂鸦致敬标志性的法国条纹衬衫marinière（法语意为“海军衫”）。1858年的这一天，法国海军将这一多用途内衣定为其海军正式制服的一种，标志着这一上衣开始了其进入世界橱窗的传奇之旅。
 
 Knit tightly from wool in order to guard seafarers against the harsh elements of their maritime environment, the marinière’s initial function is well-known. However, the significance of the sweater’s striped design is still up for debate. Some stories say the horizontal stripes were designed to make it easier to spot sailors who fell overboard, while other accounts claim that each stripe was meant to represent one of Napoleon’s naval victories over the British. Regardless of its history, there is no denying that the marinière has since transformed into an unmistakable statement of style. 
 
@@ -21,7 +21,7 @@ In the late 19th century, the marinière began its migration from navy decks to 
 
 By the 1920s, bohemians, intellectuals, and fashionistas of the French Riviera had adopted the marinière, further cementing the jersey’s evolution from a staple of nautical life to a symbol of artistic chic. 
 
-到20世纪20年代，法国Riviera地区的波西米亚人、知识分子和潮流人士开始拥抱marinière, 进一步推动了该针织衫从海上生活必需品到艺术时尚象征的转变。
+到20世纪20年代，法国Riviera地区的波西米亚人、知识分子和潮流人士开始拥抱marinière, 进一步推动了该针织衫从海上生活必需品到艺术时尚象征的演变。
 
 From artists to movie stars, the marinière has earned countless iconic endorsements over the decades, respected and seen today as a timeless classic the world over. 
 
