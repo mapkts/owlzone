@@ -53,7 +53,7 @@
   }
 
   function appendBorderTopColor() {
-    // Ten colors would be sufficient enough because we only display ten posts in home page
+    // Ten colors is sufficient enough as we only display ten posts in home page
     var colors = ["#95afc0", "#2ecc71", "#9b59b6", "#3498db", "#e74c3c", "#e67e22", "#7f8c8d", "#ffbe76", "#f6e58d",
       "#1abc9c"
     ];
