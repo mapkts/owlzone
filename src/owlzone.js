@@ -9,7 +9,7 @@
   var searchClose = $('#collapse-search');
   var searchBar = $('#search-field');
   var logo = $('.logo');
-  var highlights = $$('.highlight');
+  var highlights = $$('.highlighter-rogue');
   var height = header.getBoundingClientRect().height - topbar.getBoundingClientRect().height;
   var ticking = false;
   var resized = false;
@@ -17,7 +17,7 @@
   var opacity;
 
   applyOpacity();
-  setCodeBanners();
+  setCodeBanners(highlights);
 
   $.pipe(
     // Apply opacity when window scrolled and resized, and fix sidebar if pageYOffset > 280
@@ -117,27 +117,24 @@
     ticking = false;
   }
 
-  function setCodeBanners() {
-    var normalizedLanguages = {
+  function setCodeBanners(elems) {
+    var languages = {
+      text: 'Remark',
       html: 'HTML',
       css: 'CSS',
       js: 'JavaScript',
-      javascript: 'JavaScript',
       ts: 'TypeScript',
+      javascript: 'JavaScript',
       typescript: 'TypeScript',
-      text: 'Remarks',
     };
 
-    highlights.forEach(function (el) {
-      var lang = normalizeLang(el.firstChild.firstChild.dataset.lang);
-      $.attr({'data-lang': lang}, el);
-    })
-
-    function normalizeLang(src) {
-      if (src in normalizedLanguages) {
-        return normalizedLanguages[src];
-      }
-      return src;
-    }
+    elems.forEach(function (el) {
+      el.forEach(function (cls) {
+        var match = /language-(.+)/.exec(cls);
+        if (match != null) {
+          $.attr({'data-lang': languages[match[1]]}, el);
+        }
+      })
+    });
   }
 })();
