@@ -9,7 +9,7 @@
   var searchClose = $('#collapse-search');
   var searchBar = $('#search-field');
   var logo = $('.logo');
-  var highlights = $$('.highlighter-rogue');
+  var highlights = $$('div.highlighter-rogue');
   var height = header.getBoundingClientRect().height - topbar.getBoundingClientRect().height;
   var ticking = false;
   var resized = false;

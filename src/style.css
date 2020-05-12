@@ -800,7 +800,7 @@ code {
 
 
 /* Highlighter */
-.highlight {
+.highlighter-rogue {
   position: relative;
   min-width: 100%;
   overflow: hidden;
@@ -820,7 +820,7 @@ code {
   background-size: 38px 38px;
 }
 
-.highlight[data-lang]:before {
+.highlighter-rogue[data-lang]:before {
   content: attr(data-lang);
   position: absolute;
   top: 0;
@@ -833,7 +833,7 @@ code {
   color: #1863a1;
   background-color: rgba(50,50,50,.1);
 }
-.highlight[data-lang]:after {
+.highlighter-rogue[data-lang]:after {
   content: "";
   position: absolute;
   top: -17px;
@@ -843,11 +843,11 @@ code {
   transform: rotate(-90deg);
   background: url("{{ site.baseurl }}/assets/img/code.svg") 0 0 no-repeat;
 }
-.highlight[data-lang] pre {
+.highlighter-rogue[data-lang] pre {
   overflow: auto;
   font-size: 12px;
 }
-code:not([data-lang]) {
+code[data-lang="highlight-plaintext"] {
   background: #ccc;
   padding: 3px 5px;
   border-radius: 2px;
