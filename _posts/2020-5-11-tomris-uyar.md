@@ -31,7 +31,9 @@ In current times, Uyar’s writing has been published in over 60 languages and i
 
 目前，Uyar的作品已以60多种语言出版，为世界各地的读者所喜爱。
 
-> Istanbul-based: 驻伊斯坦比尔的
+> Relatives
+`
+Istanbul-based: 驻伊斯坦比尔的
 prolific writer: 多产的作家
 leading figure: 领军人物
 realist style: 写实风格
@@ -41,3 +43,4 @@ avant-garde: 前卫的
 intricate: 错综复杂的
 feline: 猫科动物
 profound impact: 深远的影响
+`
