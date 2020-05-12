@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 200511 Celebrating Tomris Uyar
+title: Celebrating Tomris Uyar
 date: May 11, 2020
 tags: Doodles
 categories: Translation
