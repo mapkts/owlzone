@@ -121,8 +121,11 @@
     var normalizedLanguages = {
       html: 'HTML',
       css: 'CSS',
+      js: 'JavaScript',
       javascript: 'JavaScript',
+      ts: 'TypeScript',
       typescript: 'TypeScript',
+      text: 'Remarks',
     };
 
     highlights.forEach(function (el) {
