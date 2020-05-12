@@ -7,8 +7,6 @@ categories: Translation
 image: images/200511-tomris-uyar.png
 ---
 
-# Celebrating Tomris Uyar
-
 Today’s Doodle, illustrated by Istanbul-based guest artist Merve Atılgan, celebrates the prolific Turkish short story writer and translator Tomris Uyar. A leading figure in 1970s Turkish literature, Uyar was known for her realist style that often focused on the authentic depiction of female characters and family dynamics. On this day in 1980 and 1987, Uyar was honored with one of Turkish literature's most esteemed awards for short stories, the Sait Faik Story Award.
 
 今日的Doodle，由驻伊斯坦布尔的客座艺术家Merve Atilgan绘制, 纪念土耳其多产的短篇小说作家兼翻译家Tomris Uyar。作为1970年代土耳其文学的领军人物，Uyar以她侧重于真实地描写女性角色和家庭内部关系的的写实风格著称。在1980和1987年的今天，Uyar两次被授予Sait Faik故事奖 - 土耳其文学最受人尊敬的短篇小说奖之一。
@@ -33,7 +31,7 @@ In current times, Uyar’s writing has been published in over 60 languages and i
 
 目前，Uyar的作品已以60多种语言出版，为世界各地的读者所喜爱。
 
-```
+```JavaScript
 Istanbul-based: 驻伊斯坦比尔的
 prolific writer: 多产的作家
 leading figure: 领军人物
