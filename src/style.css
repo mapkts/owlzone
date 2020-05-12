@@ -800,7 +800,7 @@ code {
 
 
 /* Highlighter */
-.highlighter-rogue {
+div.highlight {
   position: relative;
   min-width: 100%;
   overflow: hidden;
@@ -820,7 +820,7 @@ code {
   background-size: 38px 38px;
 }
 
-.highlighter-rogue[data-lang]:before {
+div.highlight[data-lang]:before {
   content: attr(data-lang);
   position: absolute;
   top: 0;
@@ -833,7 +833,7 @@ code {
   color: #1863a1;
   background-color: rgba(50,50,50,.1);
 }
-.highlighter-rogue[data-lang]:after {
+div.highlight[data-lang]:after {
   content: "";
   position: absolute;
   top: -17px;
@@ -843,7 +843,7 @@ code {
   transform: rotate(-90deg);
   background: url("{{ site.baseurl }}/assets/img/code.svg") 0 0 no-repeat;
 }
-.highlighter-rogue[data-lang] pre {
+div.highlight[data-lang] pre {
   overflow: auto;
   font-size: 12px;
 }

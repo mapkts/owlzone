@@ -132,7 +132,7 @@
       el.forEach(function (cls) {
         var match = /language-(.+)/.exec(cls);
         if (match != null) {
-          $.attr({'data-lang': languages[match[1]]}, el);
+          $.attr({'data-lang': languages[match[1]]}, el.firstChild);
         }
       })
     });
