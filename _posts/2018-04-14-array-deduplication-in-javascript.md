@@ -4,20 +4,19 @@ title: Array Deduplication in JavaScript
 date: April 14, 2018
 tags: JavaScript
 categories: JavaScript
-image: images/array.jpg
 ---
 Removing duplicates from array in JavaScript is a common question, and many libraries has implemented a unqiue method to do this kinda job. But we might not need a library to do this because remove duplicates from array is not so hard a thing. In this post, you'll learn some elegant methods to remove duplicates in array.
 
 ## Using ES6 Set
 ES6 Set is born for store unique values. Using Set to removing duplicates is very simple and elegant.
 
-{% highlight javascript %}
+```js
 const arr = [1, 1, '1', '1'];
 const uniq = [...new Set(arr)]; // [1, '1']
 
 // or
 const uniq = Array.from[new Set(arr)]; // [1, '1']
-{% endhighlight %}
+```
 
 ES6 build-in [Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set) is actually an iterable object, so we can use spread operator to spread it out and collect it in array. It works fine on primitives and objects(object, array, function, ...etc), but this doesn't works:
 
@@ -35,7 +34,7 @@ const uniq = [...new Set(arr)]; // [obj, fn]
 
 ## Using ES5 Array methods
 
-{% highlight javascript %}
+```js
 var arr = [1, 1, '1', '1'];
 
 function unique (arr) {
@@ -46,23 +45,23 @@ function unique (arr) {
 }
 
 var uniq = unique(arr); // [1, '1']
-{% endhighlight %}
+```
 
 This method works the same as the method I mentioned above, but look at this:
 
-{% highlight javascript %}
+```js
 var arr = [1, 1, NaN, NaN];
 
 // Whoops!
 var uniq = unique(arr); // [1, NaN, NaN]
-{% endhighlight %}
+```
 
 Why this happens? Actually nothing wrong about this version of `unique` function, the problem is `NaN`. Under the hood, `indexof` use === for comparison, and `NaN` is not equal to `NaN`, so `indexof` fails to handle such case. (ES6 Set consider `NaN` is the same as `NaN`, even though `NaN` !== `NaN`.)
 
 ## Sort and Deduplicate
 Let's imagine we already have an sorted array, what we need to do is to loop through the array and compare current value with previous value:
 
-{% highlight javascript %}
+```js
 var sortedArr = [1, 1, '1', '1', NaN, NaN];
 
 function unique(sortedArr) {
@@ -84,12 +83,12 @@ var uniq = unique(sortedArr); // [1, "1", NaN, NaN]
 var array = [1, '1', 1, '1', {}, NaN, {}, NaN];
 
 array.slice().sort(); // [1, "1", 1, "1", NaN, NaN, {…}, {…}];
-{% endhighlight %}
+```
 
 ## Ultimate: Using Object
 The most powerful ways to removing duplicates is using object, as key in object are unique. But remember keys in object must be string, so we need to handle case like `[1, '1']`. In addition, what if we wanna remove duplicates of object, not matter they have the same reference or not?
 
-{% highlight javascript %}
+```js
 // The key point is to generate unique string keys.
 typeof 1 // "number"
 typeof '1' // "string"
@@ -120,4 +119,4 @@ function unique(arr) {
 }
 
 unique(arr); // [1, "1", {value: 1}, {value: 2}, NaN, [1], [2]]
-{% endhighlight %}
+```

@@ -35,11 +35,11 @@ In current times, Uyar’s writing has been published in over 60 languages and i
 Istanbul-based: 驻伊斯坦比尔的
 prolific writer: 多产的作家
 leading figure: 领军人物
-realist style: 写实风格 
-family dynamics: 家庭内部关系 
-contemporary literature: 当代文学 
-avant-garde: 前卫的 
-intricate: 错综复杂的 
-feline: 猫科动物 
+realist style: 写实风格
+family dynamics: 家庭内部关系
+contemporary literature: 当代文学
+avant-garde: 前卫的
+intricate: 错综复杂的
+feline: 猫科动物
 profound impact: 深远的影响
 ```
