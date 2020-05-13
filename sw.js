@@ -1,7 +1,6 @@
-const version = '2.10.0';
+const version = '2.11.0';
 const CACHE_NAME = 'owlzone-sw-cache::v' + version;
 const urlsToCache = [
-  '/',
   '/favicon.ico',
   '/assets/img/code.svg',
   '/assets/js/home.min.js',
