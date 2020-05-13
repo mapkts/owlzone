@@ -35,7 +35,7 @@ up for debate: 有待争论
 now-iconic: 现在标志性的
 cement：巩固
 staple: 主要用品，必需品
-nautical life: 海上环境
+nautical life: 海上生活
 chic: 优美而别致的
 endorsement: 背书，拥护
 timeless classic: 永恒的经典
