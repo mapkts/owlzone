@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Celebrating the Marinière
+title: [Celebrating the Marinière](https://google.com/doodles/celebrating-the-mariniere)
 date: March 27, 2020
 tags: Doodles Translation
 categories: Translation
