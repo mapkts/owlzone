@@ -5,7 +5,6 @@ date: March 27, 2020
 tags: Doodles Translation
 categories: Translation
 image: images/200327-the-mariniere.gif
-excerpt: Knit tightly from wool in order to guard seafarers against the harsh elements of their maritime environment, the marinière’s initial function is well-known.
 ---
 
 Today’s animated Doodle celebrates the iconic French blue-and-white-striped shirt, the marinière (French for “sailor shirt”). On this day in 1858, the French Navy decreed this versatile undergarment part of the official uniform of its sailors, marking the genesis of the top’s storied journey into closets around the world.
