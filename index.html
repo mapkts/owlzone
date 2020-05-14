@@ -16,11 +16,7 @@ layout: home
           <div class="post-date"><time>{{ post.date | date_to_string }}</time></div>
 
           <div class="post-excerpt">
-            {% if post.excerpt %}
-            {{ post.excerpt }}
-            {% else %}
             {{ post.content | truncatewords: 30 }}
-            {% endif %}
           </div>
 
           <div class="post-info">
