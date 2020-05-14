@@ -7,6 +7,8 @@ categories: Translation
 image: images/200327-the-mariniere.gif
 ---
 
+> This is a translation of today's Google Doodle, click [here](https://google.com/doodles) to know more about it.
+
 Today’s animated Doodle celebrates the iconic French blue-and-white-striped shirt, the marinière (French for “sailor shirt”). On this day in 1858, the French Navy decreed this versatile undergarment part of the official uniform of its sailors, marking the genesis of the top’s storied journey into closets around the world.
 
 今天的动画涂鸦致敬标志性的法国条纹衬衫marinière（法语意为“海军衫”）。1858年的这一天，法国海军将这一多用途内衣定为其海军正式制服的一种，标志着这一上衣开始了其进入世界橱窗的传奇之旅。
