@@ -847,7 +847,7 @@ div.highlight[data-lang] pre {
   overflow: auto;
   font-size: 12px;
 }
-code[data-lang="highlight-plaintext"] {
+code.language-plaintext {
   background: #ccc;
   padding: 3px 5px;
   border-radius: 2px;

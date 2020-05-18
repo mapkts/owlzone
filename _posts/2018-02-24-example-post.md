@@ -2,6 +2,8 @@
 layout: default
 title: Example Post
 date: February 24, 2018
+categories: Miscellaneous
+tags: Miscellaneous
 ---
 
 # Heading h1
@@ -23,13 +25,13 @@ tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
 vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
 no sea takimata sanctus est Lorem ipsum dolor sit amet.
 
-Here's an ordered list:
+I'm *emphasized*.
 
-1. List item 1
-2. List item 2
-3. List item 3
+I'm **bold**.
 
-Here's an unordered list:
+I'm `inline code`.
+
+Here's a list:
 
 * List item 1
 * List item 2
@@ -41,7 +43,7 @@ Click [here](https://mapkts.com) to jump to homepage.
 
 Here's an image:
 
-![Owl and Rat](assets/img/owl-and-rat.jpg)
+![Owl and Rat](/assets/img/owl-and-rat.jpg)
 
 Here's a quote:
 
@@ -53,9 +55,9 @@ Here's a code block:
 // A function that allows the given function to only be called once.
 function once(fn) {
   return function () {
-    var f = fn;
+    const f = fn;
     fn = null;
     return f.apply(this, arguments);
-  }; 
+  };
 }
 ```
