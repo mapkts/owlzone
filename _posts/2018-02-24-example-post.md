@@ -29,7 +29,7 @@ I'm *emphasized*.
 
 I'm **bold**.
 
-I'm `inline code`.
+I'm a `inline code`.
 
 Here's a list:
 

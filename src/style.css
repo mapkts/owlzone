@@ -747,16 +747,22 @@ img {
 .post-content p {
   line-height: 1.7;
 }
+
 .post-content ul {
   padding-left: 20px;
 }
+
 .post-content ol {
-  padding-left: 20px;
+  padding-left: 24px;
 }
-.post-content li {
+
+.post-content ul li {
   list-style-type: disc;
 }
 
+.post-content ol li {
+  list-style-type: decimal;
+}
 
 
 /* Archive page  */
