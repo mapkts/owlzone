@@ -17,7 +17,7 @@ Nicholas Winton（原名Nicholas George Wertheim）于1909年的今天出生于�
 
 He set in motion a huge rescue effort to save primarily Jewish children from the threat of German occupation in present-day Czechia by transporting them to Britain. The dangerous operation required Winton and his collaborators to find homes for the children with British families, raise money, bribe officials, and even forge documents. In March 1939, the first train left Prague, and over the next few months, a total of 669 children were rescued to safety.
 
-他发动了一场大规模的营救行动，将主要为犹太裔的儿童们从被德国占领的捷克斯洛伐克（今日的捷克共和国）中解救出来，把他们运送到英国。这次危险的行动需要Winton和他的合作者为这些儿童找到英国家庭收养，筹集资金，贿赂官员，甚至伪造文件。1939年3月，第一列营救火车从布拉格离开，且在接下来的几个月的努力下，共669名儿童成功获救。
+他发起了一场大规模的营救行动，将主要为犹太裔的儿童们从被德国占领的捷克斯洛伐克（今日的捷克共和国）中解救出来，把他们运送到英国。这次危险的行动需要Winton和他的合作者为这些儿童找到英国家庭收养，筹集资金，贿赂官员，甚至伪造文件。1939年3月，第一列营救火车从布拉格离开，且在接下来的几个月的努力下，共669名儿童成功获救。
 
 For nearly 50 years, the world knew nothing of what Winton had done – not even his wife. That all changed in 1988, when she discovered documents in their attic referencing the daring rescues. Today, Winton’s story serves as an shining example of the power of selfless action to bring about incredible change.
 
