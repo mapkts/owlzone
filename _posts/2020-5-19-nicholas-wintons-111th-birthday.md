@@ -13,7 +13,7 @@ image: images/200519-nicholas-winton.jpg
 
 Nicholas Winton was born Nicholas George Wertheim in London, England on this day in 1909. In 1938, with World War II looming over Europe, Winton was inspired to do something to help.
 
-Nicholas Winton（原名Nicholas George Wertheim）于1909年的今天出生于英国伦敦。1938年，随着第二次世界大战临近欧洲，Winton决心为战火中的人们施以援手。
+Nicholas Winton（原名Nicholas George Wertheim）于1909年的今天出生于英国伦敦。1938年，随着第二次世界大战临近欧洲，Winton决心为战争阴影下的人们施以援手。
 
 He set in motion a huge rescue effort to save primarily Jewish children from the threat of German occupation in present-day Czechia by transporting them to Britain. The dangerous operation required Winton and his collaborators to find homes for the children with British families, raise money, bribe officials, and even forge documents. In March 1939, the first train left Prague, and over the next few months, a total of 669 children were rescued to safety.
 
