@@ -2,7 +2,7 @@
 layout: default
 title: A Thought On Shortening Function Calls
 date: May 23, 2020
-tags: JavaScript
+tags: JavaScript FP
 categories: JavaScript
 ---
 
@@ -28,7 +28,7 @@ const doSomething = $.pipe(
 );
 
 // Then actually do something with selected `li`s.
-doSomething($("li"));
+doSomething($$("li"));
 ```
 
 This approach is pretty handy as you can operate on native node element or nodeList without initializing a jQuery-like wrapper object to hold the actually selected ones. And what fascinates me is, can we step further, like omitting the dollar sign `$`s inside the function pipeline?
@@ -98,11 +98,13 @@ $.sync.pipe = function () {
 
 
 // And now, you are capable of doing something crazy.
+const lis = $$("li");
+
 $.sync().pipe(
   filter(x => $.hasClass("bg-redable", x)),
   addClass("bg-red"),
   css({"background": "red"}),
-);
+)(lis);
 
 console.log(window.addClass); // undefined
 ```
