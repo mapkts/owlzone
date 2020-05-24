@@ -34,8 +34,8 @@ doSomething($$("li"));
 This approach is pretty handy as you can operate on native node element or nodeList without initializing a jQuery-like wrapper object to hold the actually selected ones. And what fascinates me is, can we step further, like omitting the dollar sign `$`s inside the function pipeline?
 
 ## Evil but Yes
-It's turns out we can avoid the pervasive `$`(or any namespace variable) by temporarily polluting the global window
-in a very short lifetime. Here's my approach:
+It turns out we can avoid the pervasive `$`(or any namespace variable) by temporarily polluting the global window
+in a very short lifetime. Here's an approach:
 
 ```js
 // 1st: defines a core method list.
