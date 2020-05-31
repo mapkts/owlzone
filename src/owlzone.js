@@ -126,6 +126,7 @@
       ts: 'TypeScript',
       javascript: 'JavaScript',
       typescript: 'TypeScript',
+      bash: 'Bash',
     };
 
     elems.forEach(function (el) {
