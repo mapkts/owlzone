@@ -39,7 +39,7 @@ html, body {
   -moz-osx-font-smoothing: grayscale;
 }
 body {
-  font-family: -apple-system,BlinkMacSystemFont,Consolas,"PingFang SC","Microsoft YaHei", Arial, sans-serif;
+  font-family: Consolas,Menlo,Monaco,"Lucida Console","Courier New","Ping Fang SC","Hiragino Sans GB","Microsoft YaHei",monospace;
   line-height: 1.5;
   background: #e8e8e8;
 }
