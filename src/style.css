@@ -39,7 +39,7 @@ html, body {
   -moz-osx-font-smoothing: grayscale;
 }
 body {
-  font-family: Menlo,Monaco,"Droid Sans","Lucida Console","Liberation Mono","DejaVu Sans Mono","Bitstream Vera Sans Mono","Courier New",monospace,serif;
+  font-family: "Lucida Grande",Menlo,Monaco,"Droid Sans","Lucida Console","Liberation Mono","Courier New","Microsoft YaHei", "WenQuanYi Micro Hei",monospace,sans-serif;
   line-height: 1.5;
   background: #e8e8e8;
 }
@@ -101,7 +101,7 @@ blockquote {
 blockquote p { margin: 0.5em 0; }
 
 code {
-  font-family: Menlo,Monaco,"Droid Sans","Lucida Console","Liberation Mono","DejaVu Sans Mono","Bitstream Vera Sans Mono","Courier New",monospace,serif;
+  font-family: "Lucida Grande",Menlo,Monaco,"Droid Sans","Lucida Console","Liberation Mono","Courier New","Microsoft YaHei", "WenQuanYi Micro Hei",monospace,sans-serif;
 }
 
 img {
@@ -817,7 +817,7 @@ div.highlight {
   padding-left: 10px;
   padding-top: 20px;
   margin: 1em 0;
-  font-family: Menlo,Monaco,"Droid Sans","Lucida Console","Liberation Mono","DejaVu Sans Mono","Bitstream Vera Sans Mono","Courier New",monospace,serif;
+  font-family: "Lucida Grande",Menlo,Monaco,"Droid Sans","Lucida Console","Liberation Mono","Courier New","Microsoft YaHei", "WenQuanYi Micro Hei",monospace,sans-serif;
   font-size: 14px;
   border: 1px solid rgba(0,0,0,.2);
   border-radius: 4px;
