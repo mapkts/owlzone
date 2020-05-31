@@ -13,7 +13,7 @@ image: images/200531-galapagos-islands.png
 
 The Galápagos archipelago, which straddles the equator some 600 miles off the coast of Ecuador, consists of 19 mostly uninhabited islands and countless islets, formed through volcanic and seismic activity over many millennia. Due to their unique geology and isolation, these Pacific islands are home to flora and fauna that can be found nowhere else on the planet, including the giant tortoise depicted first in today’s Doodle—the galápago is the largest living species of tortoise—along with the only penguin species that lives north of the Equator.
 
-加拉帕戈斯群岛横跨赤道，距离厄瓜多尔海岸约600英里，由19个几乎无人居住的岛屿和不计其数的小岛组成，这些岛屿是由几千年来的火山和地震活动形成的。由于其独特的地质和孤立性，这些太平洋岛屿成为一些地球上独一无二的动植物群的家园，包括今天的第一张涂鸦中描绘的现存最大的巨型海龟，以及唯一一个生活在赤道以北的企鹅物种。
+加拉帕戈斯群岛横跨赤道，距离厄瓜多尔海岸约600英里，由19个几乎无人居住的岛屿和不计其数的小岛组成，这些岛屿是由几千年来的火山和地震活动形成的。由于其独特的地质和孤立性，这些太平洋岛屿成为一些地球上独一无二的动植物群的家园，包括今天的第一张涂鸦中描绘的现存最大的巨型海龟，以及唯一一种生活在赤道以北的企鹅。
 
 The islands are closely associated with British naturalist Charles Darwin, who arrived on the HMS Beagle in 1835 as part of a fateful journey around the world. Here, Darwin observed closely related but highly specialized species of wildlife, like finches with distinctive beaks specialized to their diets—memorialized today with the name “Darwin’s finches.”
 
