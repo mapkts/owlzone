@@ -133,7 +133,12 @@
       el.classList.forEach(function (cls) {
         var match = /language-(.+)/.exec(cls);
         if (match != null) {
-          $.attr({'data-lang': languages[match[1]]}, el.firstChild);
+          var lang = match[1];
+          if (lang in languages) {
+            $.attr({'data-lang': languages[lang]}, el.firstChild);
+          } else {
+            $.attr({'data-lang': lang.charAt(0).toUpperCase() + lang.slice(1)}, el.firstChild);
+          }
         }
       })
     });
