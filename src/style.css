@@ -788,8 +788,7 @@ img {
   list-style-type: disc;
 }
 .archive-list li time {
-  float: right;
-  font-size: .85em;
+  display: none;
 }
 .archive-list .title {
   color: #666;
@@ -804,6 +803,8 @@ img {
     font-size: 1.1em;
   }
   .archive-list li time {
+    display: block;
+    float: right;
     font-size: 1em;
   }
 }
