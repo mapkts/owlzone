@@ -101,7 +101,7 @@ $.sync.pipe = function () {
 const lis = $$("li");
 
 $.sync().pipe(
-  filter(x => $.hasClass("bg-redable", x)),
+  filter(x => hasClass("bg-redable", x)),
   addClass("bg-red"),
   css({"background": "red"}),
 )(lis);
