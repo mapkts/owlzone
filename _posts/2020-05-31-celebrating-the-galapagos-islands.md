@@ -9,8 +9,7 @@ image: images/200531-galapagos-islands.png
 
 [Today’s](https://www.google.com/doodles/celebrating-the-galapagos-islands) slideshow Doodle celebrates Ecuador’s Galápagos Islands, first made famous as a source of inspiration for Charles Darwin’s seminal theories of natural selection. Home to hundreds of unique species of plants and animals from green turtles to fur seals, the islands were declared a UNESCO World Heritage Site on this date in 1978.
 
-今天幻灯片涂鸦庆祝厄瓜多尔的加拉帕戈斯群岛，该群岛因启发了查尔斯·达尔文开创性的自然选择理论而闻名于世。从绿海龟到毛皮海豹，
-作为数百种独特的动植物的家园，加拉帕戈斯群岛于1978年的今天被联合国科教文组织列为世界遗产。
+今天幻灯片涂鸦庆祝厄瓜多尔的加拉帕戈斯群岛，该群岛因启发了查尔斯·达尔文开创性的自然选择理论而闻名于世。从绿海龟到毛皮海豹，作为数百种独特的动植物的家园，加拉帕戈斯群岛于1978年的今天被联合国科教文组织列为世界遗产。
 
 The Galápagos archipelago, which straddles the equator some 600 miles off the coast of Ecuador, consists of 19 mostly uninhabited islands and countless islets, formed through volcanic and seismic activity over many millennia. Due to their unique geology and isolation, these Pacific islands are home to flora and fauna that can be found nowhere else on the planet, including the giant tortoise depicted first in today’s Doodle—the galápago is the largest living species of tortoise—along with the only penguin species that lives north of the Equator.
 
