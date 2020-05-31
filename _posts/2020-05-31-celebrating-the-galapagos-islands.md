@@ -19,7 +19,7 @@ The islands are closely associated with British naturalist Charles Darwin, who a
 
 这些岛屿和英国自然学家查尔斯·达尔文密切相关，他于1835年乘坐英国皇家猎犬号（HMS Beagle）来到这里，作为他命定的环球旅行的一部分。在这，达尔文观察到了近缘但高度特化的野生动物物种，比如带有特用于其饮食的喙的雀鸟。这些雀鸟如今被人们命名为“达尔文雀”以纪念达尔文。
 
-It took Darwin over 20 years after he first observed the islands’ marine iguanas and blue-footed boobies to synthesize his observations into his groundbreaking theories of natural selection, published in “On the Origin of Species” in 1859.The fundamentals of his work remain a cornerstone of biological science to this day.
+It took Darwin over 20 years after he first observed the islands’ marine iguanas and blue-footed boobies to synthesize his observations into his groundbreaking theories of natural selection, published in “On the Origin of Species” in 1859. The fundamentals of his work remain a cornerstone of biological science to this day.
 
 在第一次观察到岛上的海鬣蜥和蓝脚鲣鸟之后，达尔文花了20多年的时间将自己的观察整合到他开创性的自然选择理论中，并于1859年发表于《物种起源》一书。他的这一基础理论至今仍是生物科学的基石。
 
