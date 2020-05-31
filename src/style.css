@@ -827,7 +827,7 @@ div.highlight {
   tab-size: 2;
   background-origin: content-box;
   background-image: linear-gradient(rgba(255, 255, 255, .4) 50%, transparent 50%, transparent);
-  background-size: 38px 38px;
+  background-size: 38px 36px;
 }
 
 div.highlight[data-lang]:before {
