@@ -7,10 +7,9 @@ categories: Bash
 image: images/200531-bash.png
 ---
 
-Bash is a Unix shell and command language written by Brain Fox. The name is an acronym for Bourne-Again Shell, a pun on the name of the Bourne shell that it replaces and the notion of being "born again". Bash scripts are widely used by system administrators, programmers, network engineers and anyone else who uses a Linux/Unix system regularly.
+Bash is a Unix shell and command language written by Brain Fox. The name is an acronym for Bourne-Again Shell, a pun on the name of the Bourne shell that it replaces and the notion of being "born again". It is widely used by system administrators, programmers, network engineers and anyone else who uses a Linux/Unix system regularly. Knowledge of bash programming basics is important for every Linux user.
 
-Here's the notes I had written while going through [bash scripting tutorials](https://ryanstutorials.net/bash-scripting-tutorial/). The entire notes is written as an bash
-program, and is self-explanatory.
+The code block below is the notes I had written while going through [bash scripting tutorial](https://ryanstutorials.net/bash-scripting-tutorial/), and can be served as a mostly adequate guide to bash scripting.
 
 ```bash
 #!/bin/bash
