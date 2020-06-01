@@ -2,7 +2,7 @@
 layout: default
 title: An Intro to Bash Scripting
 date: May 31, 2020
-tags: bash notes
+tags: Bash Notes
 categories: Bash
 image: images/200531-bash.png
 ---
