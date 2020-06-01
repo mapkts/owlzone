@@ -108,6 +108,10 @@ img {
   width: 100%;
 }
 
+main {
+  min-height: 100vh;
+}
+
 /*
  * Layout
  */
