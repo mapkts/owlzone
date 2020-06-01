@@ -2,7 +2,7 @@
 layout: default
 title: Nicholas Winton's 111th Birthday
 date: May 19, 2020
-tags: Doodles Translation
+tags: Translation Doodles
 categories: Translation
 image: images/200519-nicholas-winton.jpg
 ---

@@ -2,7 +2,7 @@
 layout: default
 title: Celebrating the Marinière
 date: March 27, 2020
-tags: Doodles Translation
+tags: Translation Doodles
 categories: Translation
 image: images/200327-the-mariniere.gif
 ---

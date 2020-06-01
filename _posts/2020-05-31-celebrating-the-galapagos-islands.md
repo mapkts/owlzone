@@ -2,7 +2,7 @@
 layout: default
 title: Celebrating the Galápagos Islands
 date: May 31, 2020
-tags: Doodles Translation
+tags: Translation Doodles
 categories: Translation
 image: images/200531-galapagos-islands.png
 ---
