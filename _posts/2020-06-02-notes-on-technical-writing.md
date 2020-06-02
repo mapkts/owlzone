@@ -181,14 +181,14 @@ Consider starting all items in a numbered list with an imperative verb. For exam
 
 ### Punctuate items appropriately
 
-If the list item is a sentence, use sentence capitalization and punctuation. Otherwise, do not use sentence capitalization and punctuation. 
+If the list item is a sentence, use sentence capitalization and punctuation. Otherwise, do not use sentence capitalization and punctuation.
 
 ### Create useful tables
 
 Consider the following guidelines when creating tables:
 
 * Label each column with a meaningful header.
-* Avoid putting too much text into a table cell. 
+* Avoid putting too much text into a table cell.
 * Strive for parallelism within individual columns.
 
 ### Introduce each list and table
@@ -232,7 +232,7 @@ The bold sentence distracts from that theme.
 
 Long paragraphs are visually intimidating. Readers generally welcome paragraphs containing three to five sentences, but will avoid paragraphs containing more than about seven sentences.
 
-Conversely, don't make paragraphs too short. If your document contains plenty of one-sentence paragraphs, your organization is faulty. 
+Conversely, don't make paragraphs too short. If your document contains plenty of one-sentence paragraphs, your organization is faulty.
 
 ### Answer what, why, and how
 
@@ -259,7 +259,7 @@ A good document begins by defining its scope and its non-scope. For example:
 
 > This document does not describe the design for the related technology, Project Froobus.
 
-These scope and non-scope statements benefit not only the reader but also the writer (you). While writing, if the contents of your document veer away from the scope statement, then you must either refocus your document or modify your scope statement. 
+These scope and non-scope statements benefit not only the reader but also the writer (you). While writing, if the contents of your document veer away from the scope statement, then you must either refocus your document or modify your scope statement.
 
 ### State your audience
 
@@ -284,12 +284,12 @@ Also, always write an executive summary (a TL;DR) for long engineering documents
 
 ## Punctuation
 
-This section discusses proper usages of punctuation marks. Here's the guideline:
+This section discusses proper usages of punctuation marks. TL;DR:
 
 * Insert a comma wherever a reader would naturally pause somewhere within a sentence.
 * Use a period rather than a comma to separate two independent thoughts.
 * Use a semicolon rather than a period to unite highly related thoughts. Note that the thoughts preceding and following the semicolon must each be grammatically complete.
-* Use em-dash to represent a longer pause than a comma. Be aware em-dashes are compelling punctuation marks, rich with possibilities. 
+* Use em-dash to represent a longer pause than a comma. Be aware em-dashes are compelling punctuation marks, rich with possibilities.
 * Use parentheses to hold minor points and digressions. Parentheses inform readers that the enclosed text isn't critical.
 
 The rules regarding periods and parentheses have tripped up many a writer. Here are the standards:
@@ -297,7 +297,8 @@ The rules regarding periods and parentheses have tripped up many a writer. Here 
 * If a pair of parentheses holds an entire sentence, the period goes inside the closing parenthesis.
 * If a pair of parentheses ends a sentence but does not hold the entire sentence, the period goes just outside the closing parenthesis.
 
-### Additional resources
+
+## Additional resources
 
 1. [University of Oxford Style Guide](https://www.ox.ac.uk/sites/files/oxford/media_wysiwyg/University%20of%20Oxford%20Style%20Guide.pdf) (for general purpose)
 2. [Microsoft Writing Style Guide](https://docs.microsoft.com/en-us/style-guide/welcome/) (for anyone writing technical documentation)
