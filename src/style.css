@@ -51,6 +51,10 @@ a::selection {
   color: #222;
 }
 
+main {
+  min-height: 100vh;
+}
+
 a {
   color: #1863a1;
   text-decoration: none;
@@ -70,6 +74,9 @@ a:active {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 900;
+}
+h2, h3, h4, h5, h6 {
+  margin: 1rem 0;
 }
 h1 { font-size: 2em }
 h2 { font-size: 1.5em }
@@ -108,8 +115,16 @@ img {
   width: 100%;
 }
 
-main {
-  min-height: 100vh;
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th, td {
+  border: 1px solid #888;
+  padding: 0.5rem;
+}
+tr:hover {
+  background-color: #ddd;
 }
 
 /*
