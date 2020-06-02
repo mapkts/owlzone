@@ -777,10 +777,12 @@ tr:hover {
 
 .post-content ul li {
   list-style-type: disc;
+  margin: 0.5rem 0;
 }
 
 .post-content ol li {
   list-style-type: decimal;
+  margin: 0.5rem 0;
 }
 
 
