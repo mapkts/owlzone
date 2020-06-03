@@ -4,6 +4,7 @@ highlighter:    rouge
 
 kramdown:
   auto_ids:     true
+  parse_block_html: true
   toc_levels:   2..3
 
 # Permalinks
