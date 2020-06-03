@@ -19,7 +19,6 @@ exclude:
   - .git/
   - .github/
   - src/
-  - drafts/
   - node_modules/
   - Gemfile
   - README.md
