@@ -115,7 +115,7 @@ Or
 
 > The **met_trick** variable stores the current accuracy.
 
-You can sometimes repair a There is or There are sentence by moving the true subject and true verb from the end of the sentence to the beginning. For example:
+You can sometimes repair a **There is** or **There are** sentence by moving the true subject and true verb from the end of the sentence to the beginning. For example:
 
 > There are two disturbing facts about Perl you should know.
 
@@ -300,6 +300,6 @@ The rules regarding periods and parentheses have tripped up many a writer. Here 
 
 ## Additional resources
 
-1. [University of Oxford Style Guide](https://www.ox.ac.uk/sites/files/oxford/media_wysiwyg/University%20of%20Oxford%20Style%20Guide.pdf) (for general purpose)
+1. [University of Oxford Style Guide](https://www.ox.ac.uk/sites/files/oxford/media_wysiwyg/University%20of%20Oxford%20Style%20Guide.pdf) (for general writing)
 2. [Microsoft Writing Style Guide](https://docs.microsoft.com/en-us/style-guide/welcome/) (for anyone writing technical documentation)
 3. [Google developer documentation style guide](https://developers.google.com/style) (for anyone writing developer documentation for Google-related projects)
