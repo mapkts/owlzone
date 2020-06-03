@@ -6,10 +6,9 @@ tags: Writing Notes
 categories: Writing
 ---
 
-This article records some notes I had written while engaging in [Google Technical Writing Courses](https://developers.google.com/tech-writing/). The google technical writing courses do an excellent job in giving a detailed list of things we should consider while writing technical materials. Most of the topics I listed below are the critical basics of technical writing.
+This article records some notes I had written while engaging in [Google Technical Writing Courses](https://developers.google.com/tech-writing/). This writing courses do an excellent job in giving a detailed list of things we should consider while writing technical materials. As a reference for future revisiting, I'm writing down the critical basics of technical writing here.
 
 {% include toc.html %}
-
 
 ## Words
 
