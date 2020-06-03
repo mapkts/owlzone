@@ -54,13 +54,13 @@ Here's an unordered list:
 Here's a nested list:
 
 1. list item 1
-  1. lorem ipsum
-  2. dolor sit amet
-  3. consetetur sadipscing
+    1. lorem ipsum
+    2. dolor sit amet
+    3. consetetur sadipscing
 2. list item 2
-  * lorem ipsum
-  * dolor sit amet
-  * consetetur sadipscing
+    * lorem ipsum
+    * dolor sit amet
+    * consetetur sadipscing
 3. list item 3
 
 Here's a table:
