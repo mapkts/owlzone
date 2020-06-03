@@ -31,7 +31,7 @@ const doSomething = $.pipe(
 doSomething($$("li"));
 ```
 
-This approach is pretty handy as you can operate on native node element or nodeList without initializing a jQuery-like wrapper object to hold the actually selected ones. And what fascinates me is, can we step further, like omitting the dollar sign `$`s inside the function pipeline?
+This approach is pretty handy as you can operate on native node element or nodeList without initializing a jQuery-like wrapper object to hold the actually selected ones. And what fascinates me is, can we step even further, like omitting the dollar sign `$`s inside the function pipeline?
 
 ## Evil but Yes
 It turns out we can avoid the pervasive `$`(or any namespace variable) by temporarily polluting the global window
@@ -54,7 +54,7 @@ const core_methods = {
 
 // 2nd: defines our almighty `sync` and `unsync`.
 // Assumes the namespace symbol is `$`.
-const globals = Object.create(null);
+const globals = {};
 $.sync = function () {
   // temporarily exports the core methods to the global.
   core_methods.forEach(method => {
