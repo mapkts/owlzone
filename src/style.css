@@ -785,6 +785,13 @@ tr:hover {
   margin: 0.5rem 0;
 }
 
+#markdown-toc {
+  padding-left: 28px;
+}
+#markdown-toc li {
+  margin: 0;
+}
+
 
 /* Archive page  */
 .archive {
