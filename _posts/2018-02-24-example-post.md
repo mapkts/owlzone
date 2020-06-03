@@ -31,12 +31,6 @@ I'm **bold**.
 
 I'm a `inline code`.
 
-Here's a list:
-
-* List item 1
-* List item 2
-* List item 3
-
 Here's a link:
 
 Click [here](https://mapkts.com) to jump to homepage.
@@ -44,6 +38,37 @@ Click [here](https://mapkts.com) to jump to homepage.
 Here's an image:
 
 ![Owl and Rat](/assets/img/owl-and-rat.jpg)
+
+Here's an ordered list:
+
+1. list item 1
+2. list item 2
+3. list item 3
+
+Here's an unordered list:
+
+* list item 1
+* list item 2
+* list item 3
+
+Here's a nested list:
+
+1. list item 1
+  1. lorem ipsum
+  2. dolor sit amet
+  3. consetetur sadipscing
+2. list item 2
+  * lorem ipsum
+  * dolor sit amet
+  * consetetur sadipscing
+3. list item 3
+
+Here's a table:
+
+| Header 1 | Header 2 | Header 3 |
+| --- | --- | --- |
+| lorem | ipsum | dolor |
+| sit | amet | consetetur |
 
 Here's a quote:
 
