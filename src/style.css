@@ -767,26 +767,29 @@ tr:hover {
   line-height: 1.7;
 }
 
+.post-content li {
+  position: relative;
+  display: block;
+  padding-left: 1.5rem;
+}
+.post-content li:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.post-content ul>li:before {
+  content: "\2605";
+}
+.post-content ol>li:before {
+  content: counter(ol) ".";
+  counter-increment: ol;
+}
 .post-content ul {
-  padding-left: 20px;
+  margin: 0.5rem 0;
 }
-
 .post-content ol {
-  padding-left: 28px;
-}
-
-.post-content ul li {
-  list-style-type: disc;
   margin: 0.5rem 0;
-}
-
-.post-content ol li {
-  list-style-type: decimal;
-  margin: 0.5rem 0;
-}
-
-#markdown-toc {
-  padding-left: 28px;
+  counter-reset: ol;
 }
 #markdown-toc li {
   margin: 0;
