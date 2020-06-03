@@ -6,7 +6,7 @@ tags: JavaScript FP
 categories: JavaScript
 ---
 
-I recently come up with some crazy but funny ideas regarding shortening function calls when I was refactoring JavaScript code that empowers this website. While these ideas will probably never have the chance to land in real-world production code, a little bit of exploration is still worth taking.
+I recently come up with some crazy but fancy ideas regarding shortening function calls when I was refactoring JavaScript code that empowers this website. While these ideas will probably never have the chance to land in real-world production code, a little bit of exploration is still worth taking.
 
 ## Typical Approach
 The typical approach of shortening function calls is through method chaining and shorthand function names, but these two approaches have some significant defects. Concerning method chaining, only those functions that produce all sorts of side effects can return namespace object at the end of the function body to make them chainable. There
