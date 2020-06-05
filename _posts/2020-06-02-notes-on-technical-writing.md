@@ -203,7 +203,7 @@ We recommend giving the list or table a introductory sentence. For example, cons
 
 ## Paragraphs
 
-This section provides some guidelines on building cohesive paragraphs.But first, here is an inspirational message:
+This section provides some guidelines on building cohesive paragraphs. But first, here is an inspirational message:
 
 > The work of writing is simply this: untangling the dependencies among the parts of a topic, and presenting those parts in a logical stream that enables the reader to understand you.
 
