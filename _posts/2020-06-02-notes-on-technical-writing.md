@@ -4,6 +4,7 @@ title: Notes on Technical Writing
 date: June 02, 2020
 tags: Writing Notes
 categories: Writing
+image: images/200602-technical-writing.jpg
 ---
 
 This article records some notes I had written while engaging in [Google Technical Writing Courses](https://developers.google.com/tech-writing/). This writing courses do an excellent job in giving a detailed list of things we should consider while writing technical materials. As a reference for future revisiting, I'm writing down the critical basics of technical writing here.
