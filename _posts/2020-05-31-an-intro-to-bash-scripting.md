@@ -63,6 +63,7 @@ echo There are $nol entries in current directory
 # $@ - All the arguments supplied to the Bash script.
 # $? - The exit status of the most recently run process.
 # $$ - The process ID of the current script.
+# $! - The process ID of the last background process.
 # $USER - The username of the user running the script.
 # $HOSTNAME - The hostname of the machine the script is running on.
 # $SECONDS - The number of seconds since the script was started.
@@ -104,7 +105,7 @@ read -sp 'Password: ' password
 #
 # STDIN  - /dev/stdin  or /proc/self/fd/0
 # STDOUT - /dev/stdout or /proc/self/fd/1
-# STDERR - /dev/stderr or /proc/self/fd/1
+# STDERR - /dev/stderr or /proc/self/fd/2
 cat /dev/stdin | cut -d' ' -f 2,3 | sort
 
 # 3. Command Line Arguments
