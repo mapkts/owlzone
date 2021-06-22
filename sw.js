@@ -1,4 +1,4 @@
-const version = '2.15.0';
+const version = '2.15.1';
 const CACHE_NAME = 'owlzone-sw-cache::v' + version;
 const urlsToCache = [
   '/favicon.ico',
