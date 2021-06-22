@@ -39,9 +39,14 @@
     -moz-osx-font-smoothing: grayscale;
   }
   body {
-    font-family: Consolas,Menlo,Monaco,"Lucida Console","Courier New","Ping Fang SC","Hiragino Sans GB","Microsoft YaHei",monospace;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
     line-height: 1.5;
     background: #e8e8e8;
+  }
+  @media (min-width: 768px) {
+    body {
+      font-size: 16px;
+    }
   }
 
   ::selection {
@@ -104,7 +109,7 @@
   blockquote p { margin: 0.5em 0; }
 
   code {
-    font-family: Consolas,Menlo,Monaco,"Lucida Console","Courier New",monospace;
+    font-family: "Source Code Pro",Consolas,Menlo,Monaco,"Lucida Console","Courier New",monospace;
   }
 
   li {
@@ -603,6 +608,7 @@
     float: left;
     padding: 16px;
     padding-bottom: 0;
+    font-family: Consolas,Menlo,Monaco,"Lucida Console","Courier New","Ping Fang SC","Hiragino Sans GB","Microsoft YaHei",monospace;
   }
   .widget-banner {
     overflow: hidden;
